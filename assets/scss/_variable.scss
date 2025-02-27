@@ -1,0 +1,34 @@
+:root, [data-bs-theme=light] {
+	--bs-body-font-family: "DM Sans", sans-serif;
+	--bs-heading-font-family: 'SuisseIntl SemiBold';
+	--bs-body-font-size: 16px;
+	--bs-body-font-weight: 400;
+	--bs-body-line-height: 1.5;
+
+	--bs-body-bg: #FFFFFF;
+	--bs-body-bg-rgb: 255, 255, 255;
+	--bs-body-color: #6B6B6B;
+	--bs-body-color-rgb: 107, 107, 107;
+	--bs-secondary-color: #C6C6C6;
+	--bs-secondary-color-rgb: 198, 198, 198;
+	--bs-heading-color: #012A2B;
+
+	--bs-primary: #D9FF43;
+	--bs-dark: #012A2B;
+	--bs-light: #E4EEEF;
+	--bs-secondary: #023436;
+	
+	--bs-primary-rgb: 217, 255, 67;
+	--bs-dark-rgb: 1, 42, 43;
+	--bs-light-rgb: 228, 238, 239;
+	--bs-secondary-rgb: 2, 52, 54;
+
+	--bs-border-color: #E4EEEF;
+	--bs-border-color-translucent: rgba(228, 238, 239, 1);
+
+	--bs-border-radius: 10px;
+	--bs-border-radius-sm: 5px;
+	--bs-border-radius-lg: 20px;
+
+	--bs-transition: 300ms ease;
+}

@@ -1,0 +1,24 @@
+/* 3.04 - Sidebar - Start
+================================================== */
+.sidebar {
+	>* {
+		padding: 48px 40px 50px;
+		background-color: var(--bs-white);
+		border-radius: var(--bs-border-radius);
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+	}
+
+	.tags_block a {
+		background-color: #EFF6F6;
+	}
+
+}
+.sidebar_widget_title {
+	line-height: 1;
+	font-size: 24px;
+	margin-bottom: 36px;
+}
+/* 3.04 - Sidebar - End
+================================================== */

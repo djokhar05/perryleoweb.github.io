@@ -1,0 +1,98 @@
+/* Process Sections - Start
+================================================== */
+
+// Online Banking Process - Start
+.ob_process_section {
+	padding-bottom: 390px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	.overlay {
+		opacity: 0.02;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	[class*="shape_shadow_"] {
+		opacity: 0.7;
+		max-width: 282px;
+		filter: blur(150px);
+	}
+	.shape_shadow_1 {
+		top: -98px;
+		left: -116px;
+	}
+	.shape_shadow_2 {
+		bottom: -98px;
+		left: -116px;
+	}
+	.shape_shadow_3 {
+		top: -98px;
+		right: -116px;
+	}
+	.shape_shadow_4 {
+		bottom: -98px;
+		right: -116px;
+	}
+	.shape_shadow_5 {
+		bottom: 0;
+		left: 42.5%;
+	}
+}
+
+.ob_process_section + .review_section .online_banking_review {
+	z-index: 2;
+	padding: 70px;
+	position: relative;
+	margin-top: -260px;
+	border: 1px solid var(--bs-primary);
+	border-radius: var(--bs-border-radius-lg);
+}
+
+.online_banking_process {
+	overflow: hidden;
+	background-color: var(--bs-dark);
+	border: 1px solid var(--bs-primary);
+	border-radius: var(--bs-border-radius-lg);
+	align-items: stretch;
+	>li {
+		width: 25%;
+		display: flex;
+		flex: 0 0 auto;
+		text-align: center;
+		align-items: stretch;
+		flex-direction: column;
+		padding: 50px 24px 42px;
+		justify-content: space-between;
+		&:not(:last-child) {
+			border-style: solid;
+			border-width: 0 1px 0 0;
+			border-color: var(--bs-primary);
+		}
+	}
+	.serial_number {
+		line-height: 1;
+		font-size: 22px;
+		margin-bottom: 70px;
+		color: var(--bs-white);
+	}
+	.icon {
+		margin-bottom: 38px;
+	}
+	.title {
+		font-size: 26px;
+		line-height: 36px;
+		margin-bottom: 20px;
+		color: var(--bs-white);
+	}
+	p {
+		color: #CFCFCF;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 26px;
+	}
+}
+// Online Banking Process - End
+
+/* Process Sections - End
+================================================== */

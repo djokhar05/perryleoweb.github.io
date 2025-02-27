@@ -1,0 +1,39 @@
+/* 4.02 - Call To Action - Start
+================================================== */
+.cta_wrapper {
+	padding: 85px 70px 98px;
+	border-radius: var(--bs-border-radius);
+	background: linear-gradient(-45deg, #00F1B5, #D9FF43);
+	.cta_title {
+		font-size: 50px;
+		max-width: 513px;
+		line-height: 65px;
+		margin-bottom: 36px;
+	}
+
+	.shape_lines_flow_1 {
+		top: -20px;
+		right: -90px;
+		opacity: 0.15;
+		max-width: 300px;
+	}
+	.shape_dollar_1 {
+		top: 50px;
+		right: 180px;
+		max-width: 40px;
+		filter: blur(2px);
+	}
+	.shape_dollar_2 {
+		right: 290px;
+		bottom: 86px;
+		max-width: 60px;
+	}
+	.shape_dollar_3 {
+		right: 24px;
+		bottom: 32px;
+		max-width: 48px;
+		filter: blur(2px);
+	}
+}
+/* 4.02 - Call To Action - End
+================================================== */

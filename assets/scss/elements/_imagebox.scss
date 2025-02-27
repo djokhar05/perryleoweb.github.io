@@ -1,0 +1,70 @@
+/* ImageBox Block - Start
+================================================== */
+.image_block {
+	overflow: hidden;
+	position: relative;
+}
+// Online Banking Features - Start
+.online_banking_features {
+	.imagebox_block {
+		--bs-primary-rgb: 247, 255, 217;
+		--bs-success-rgb: 229, 255, 223;
+		--bs-warning-rgb: 255, 233, 212;
+		--bs-light-rgb: 239, 246, 255;
+		--bs-info-rgb: 221, 253, 237;
+		padding: 50px 46px;
+		background-color: var(--bs-light);
+		border-radius: var(--bs-border-radius-lg);
+		.imagebox_icon {
+			width: 70px;
+			height: 70px;
+			border-radius: 100%;
+			align-items: center;
+			display: inline-flex;
+			justify-content: center;
+			background-color: var(--bs-white);
+			box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.17);
+		}
+		.imagebox_content {
+			max-width: 461px;
+			margin-bottom: 62px;
+		}
+		.imagebox_title {
+			font-size: 30px;
+			max-width: 360px;
+			line-height: 42px;
+			margin: 38px 0 14px;
+			letter-spacing: -1px;
+		}
+		p {
+			font-size: 20px;
+			line-height: 30px;
+		}
+
+		.image_block {
+			height: 330px;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			img {
+				max-height: 100%;
+			}
+		}
+	}
+
+	.col-lg-4 {
+		.imagebox_block {
+			.imagebox_content {
+				margin-bottom: 30px;
+			}
+			.image_block {
+				height: 220px;
+				margin: 0 -30px 0;
+			}
+		}
+	}
+}
+
+// Online Banking Features - End
+/* ImageBox Block - End
+================================================== */

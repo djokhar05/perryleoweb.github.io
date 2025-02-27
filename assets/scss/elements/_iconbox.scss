@@ -1,0 +1,149 @@
+/* 2.17 - Iconbox - Start
+================================================== */
+.iconbox_block {
+	.iconbox_icon {
+		width: 65px;
+		height: 65px;
+		align-items: center;
+		border-radius: 100%;
+		display: inline-flex;
+		justify-content: center;
+		background-color: var(--bs-light);
+		img {
+			width: 24px;
+		}
+	}
+}
+
+.iconbox_block.icon_left {
+	gap: 20px;
+	display: flex;
+	align-items: flex-start;
+}
+
+// Payment Method Block - Start
+.payment_methods_section {
+	padding: 0 30px;
+	.content_wrapper {
+		padding: 130px 15px;
+		border-radius: 30px;
+		background-image: linear-gradient(120deg, #8234C5, #230952);
+	}
+	.shape_nate_1 {
+		top: -120px;
+		left: -140px;
+		max-width: 870px;
+	}
+	.shape_nate_2 {
+		right: -270px;
+		bottom: -212px;
+		max-width: 470px;
+		img {
+			transform: rotate(26deg);
+		}
+	}
+	.shape_nate_3 {
+		top: -150px;
+		right: -300px;
+		max-width: 500px;
+	}
+}
+
+.payment_method_block {
+	.block_icon {
+		padding: 40px 25px;
+		border-radius: 20px;
+		background-color: var(--bs-dark);
+		transition: var(--bs-transition);
+		border: 1px solid rgba(217, 255, 67, 0.4);
+	}
+	.block_content {
+		z-index: 1;
+		overflow: hidden;
+		position: relative;
+		border-radius: 20px;
+		padding: 31px 25px 40px;
+		background-color: var(--bs-dark);
+		transition: var(--bs-transition);
+		border: 1px solid rgba(217, 255, 67, 0.4);
+		&:before {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			z-index: -1;
+			content: '';
+			position: absolute;
+			transition: var(--bs-transition);
+			background-image: linear-gradient(30deg, rgba(217, 255, 67, 0.4) 0%, transparent 60%);
+		}
+	}
+	.block_title {
+		font-size: 28px;
+		line-height: 34px;
+		margin-bottom: 14px;
+	}
+	p {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 26px;
+		margin-bottom: 18px;
+	}
+	.btn-link {
+		font-size: 16px;
+	}
+
+	&:hover {
+		.block_icon,
+		.block_content {
+			border-color: var(--bs-primary);
+		}
+		.block_content {
+			&:before {
+				opacity: 1;
+			}
+		}
+	}
+}
+// Payment Method Block - End
+
+// Car Insurance Process - Start
+.car_insurance_process {
+	text-align: center;
+	border-radius: 10px;
+	padding: 70px 60px 64px;
+	background-color: var(--bs-white);
+	box-shadow: 0 3px 15px 0 rgba(12, 1, 13, 0.03);
+	.iconbox_icon {
+		width: auto;
+		height: 80px;
+		border-radius: 0;
+		margin-bottom: 34px;
+		background-color: transparent;
+		img {
+			width: auto;
+			height: auto;
+			max-height: 100%;
+		}
+	}
+	.iconbox_title {
+		font-size: 22px;
+		line-height: 28px;
+		margin-bottom: 18px;
+	}
+}
+
+.car_process_section {
+	.shape_nate_1 {
+		left: 0;
+		bottom: 0;
+	}
+	.shape_nate_2 {
+		top: 150px;
+		right: -30px;
+	}
+}
+// Car Insurance Process - End
+/* 2.17 - Iconbox - End
+================================================== */

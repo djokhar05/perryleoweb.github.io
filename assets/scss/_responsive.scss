@@ -1,0 +1,1746 @@
+/* 
+Responsive For Mobile & Tablet Devices
+================================================== 
+* Project Name   :  Synox – Finance & Consulting Site Template.
+* File           :  CSS Base
+* Version        :  1.0.0
+* Author         :  XpressBuddy (https://themeforest.net/user/xpressbuddy/portfolio)
+* Developer			 :	webrok (https://www.fiverr.com/webrok?up_rollout=true)
+*	CSS code for responsive layout To make responsive
+================================================== 
+*/
+
+/* Media Screen 1440px - Start
+================================================== */
+@media screen and (max-width: 1660px) {
+	.site_header .btns_group {
+		gap: 6px;
+		margin-left: -91px;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.main_menu_list {
+		gap: 26px;
+	}
+	.hotline_btn {
+		gap: 6px;
+		padding: 10px 14px;
+	}
+	.hero_investment_solution h1 {
+		font-size: 66px;
+		line-height: 76px;
+	}
+	.hero_section p {
+		font-size: 20px;
+		line-height: 32px;
+	}
+	.pricing_block {
+		gap: 30px;
+		padding: 40px;
+	}
+	.team_block .team_member_name {
+		font-size: 22px;
+		margin-bottom: 8px;
+	}
+	.site_footer .heading_block .heading_text {
+		font-size: 42px;
+		line-height: 48px;
+	}
+	.footer_layout_1 .shape_dollar_1 {
+		left: 15px;
+		max-width: 40px;
+	}
+	.hero_online_banking .hero_hand_image {
+		bottom: 280px;
+		max-width: 550px;
+	}
+	.hero_online_banking .ob_hero_img {
+		right: 223px;
+		bottom: 40%;
+		max-width: 400px;
+	}
+	.online_banking_process .title {
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 14px;
+	}
+	.hero_payment_solutions .container-fluid {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.hero_payment_solutions p {
+		margin-bottom: 20px;
+	}
+	.hero_payment_solutions .btns_group {
+		gap: 20px;
+	}
+	.financial_consulting .container-fluid,
+	.footer_layout_4 {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.hero_insurance .shape_nate_28 {
+		left: -40px;
+		max-width: 280px;
+	}
+	.car_insurance_cta_section .shape_star_1 {
+		left: -190px;
+	}
+	.review_section .shape_car_path_1 {
+		max-width: 56px;
+	}
+	.review_section .shape_nate_1 {
+		right: -240px;
+	}
+	.review_section .shape_car_path_2 {
+		max-width: 90px;
+	}
+	[class*=_details_section] .shape_nate_1 {
+		right: -230px;
+		max-width: 340px;
+	}
+	[class*=_details_section] .shape_nate_3 {
+		max-width: 440px;
+	}
+	[class*=_details_section] .shape_nate_4 {
+		max-width: 480px;
+	}
+	[class*=_details_section] .shape_dollar_2 {
+		left: -20px;
+		max-width: 50px;
+	}
+	[class*=_details_section] .shape_dollar_3 {
+		right: -20px;
+		max-width: 50px;
+	}
+	[class*=_details_section] .shape_dollar_1 {
+		right: -20px;
+		max-width: 50px;
+	}
+	.header_layout_3 + main {
+		padding-top: 104px;
+	}
+}
+/* Media Screen 1440px - End
+================================================== */
+
+/* Media Screen 13606px - Start
+================================================== */
+@media screen and (max-width: 1366px) {
+	.hero_section h1 {
+		font-size: 66px;
+		line-height: 72px;
+	}
+	.heading_block.style_2 .heading_text {
+		font-size: 48px;
+		line-height: 58px;
+	}
+	.integrated_wrapper svg {
+		width: 130px;
+	}
+	.integrated_wrapper > ul li {
+		gap: 10px;
+	}
+	.integrated_wrapper .site_logo .site_link {
+		padding: 24px 40px;
+	}
+	.hero_payment_solutions .hero_title {
+		font-size: 66px;
+		line-height: 80px;
+		margin: 20px 0 6px;
+	}
+	.hero_payment_solutions {
+		text-align: center;
+	}
+	.hero_payment_solutions .container-fluid > .row > .order-lg-last {
+		order: 0 !important;
+	}
+	.hero_payment_solutions .container-fluid > .row {
+		justify-content: center;
+	}
+	.hero_payment_solutions .container-fluid > .row > [class*="col-"] {
+		width: 60%;
+		max-width: 60%;
+	}
+	.hero_payment_solutions .btns_group {
+		gap: 50px;
+		margin: 20px 0;
+		flex-direction: row;
+		>li {
+			width: auto;
+			display: inline-block;
+		}
+		.funfact_block.left_layout {
+			text-align: center;
+			align-items: center;
+		}
+	}
+	.hero_payment_solutions p {
+		margin-bottom: 40px;
+	}
+	.hero_payment_solutions {
+		padding: 170px 0 0;
+	}
+	.process_steps_block {
+		gap: 60px 20px;
+	}
+	.ps_policy_items.process_steps_block .step_block_icon {
+		width: 150px;
+		height: 150px;
+	}
+	.ps_policy_items.process_steps_block .step_block_icon img {
+		max-height: 50px;
+	}
+	.footer_layout_3 .cta_section .heading_text {
+		font-size: 48px;
+		line-height: 58px;
+	}
+	.footer_layout_3 .cta_section .btn {
+		font-size: 24px;
+		padding: 30px 70px;
+	}
+	.payment_method_block .block_title {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.contact_process_step .iconbox_title {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.ps_policy_items.process_steps_block .step_block_icon img {
+		max-height: 40px;
+	}
+	.ps_policy_items.process_steps_block .step_block_icon {
+		width: 120px;
+		height: 120px;
+	}
+	.ps_pricing_block {
+		padding: 20px;
+	}
+	.ps_pricing_block .pricing_feature_list {
+		gap: 20px;
+		padding-left: 20px;
+	}
+	.footer_layout_4 .shape_nate_1 {
+		left: -295px;
+	}
+	.footer_layout_4 .shape_nate_2 {
+		right: -290px;
+	}
+	.about_section .shape_nate_1 {
+		left: -120px;
+	}
+	.fc_decoration_wrap .shape_nate_2 {
+		right: -130px;
+	}
+	.pricing_section .shape_nate_1 {
+		right: -270px;
+	}
+	.pricing_section .shape_nate_2 {
+		left: -120px;
+	}
+	.pricing_block.style_2 {
+		padding: 50px 40px 50px 0;
+	}
+	.footer_layout_4 .cta_section .heading_block .heading_text {
+		font-size: 54px;
+		line-height: 64px;
+	}
+	.site_header .btn {
+		gap: 8px;
+		font-size: 16px;
+		padding: 14px 20px;
+	}
+	.insurance_achievement_funfacts .funfact_block .funfact_value {
+		font-size: 30px;
+	}
+	.review_section .shape_arrow_1 {
+		right: 15px;
+		max-width: 20px;
+	}
+	.client_feedback_section .shape_arrow_1 {
+		left: 15px;
+		max-width: 20px;
+	}
+	.insurance_clients_logo_wrap .clients_logo img {
+		max-width: 130px;
+	}
+	.hero_insurance [class*="shape_pattern"] {
+		max-width: 200px;
+	}
+	.hero_insurance .shape_nate_29 {
+		max-width: 250px;
+	}
+	.hero_car_insurance .shape_nate_1 {
+		left: -130px;
+	}
+	.hero_car_insurance .shape_nate_2 {
+		right: -380px;
+	}
+	.hero_car_insurance {
+		background-position: right 17% top;
+	}
+	.hero_car_insurance .hero_car {
+		right: 39.7%;
+	}
+	.car_insurance_process {
+		padding: 70px 50px 64px;
+	}
+	.footer_layout_6 .app_download_wrapper .hand_image {
+		max-width: 200px;
+	}
+	.footer_layout_6 .app_download_wrapper {
+		background-size: 100%;
+		background-position: right 0px center;
+	}
+	.footer_layout_6 .app_download_wrapper .heading_block {
+		max-width: 100%;
+	}
+	.footer_layout_6 .btns_group {
+		padding: 36px 0 130px;
+	}
+	.footer_layout_6 .contact_wrapper {
+		padding: 44px 30px 50px;
+	}
+	.footer_layout_6 [class*="shape_car_path"] {
+		max-width: 120px;
+	}
+	.header_layout_3 + main {
+		padding-top: 104px;
+	}
+	.policy_items.process_steps_block > li:not(:last-child):after {
+		right: -50px;
+	}
+	.header_layout_3 .dropdown-menu {
+		margin-top: 43px;
+	}
+	.header_layout_3 .dropdown-menu:before {
+		top: -43px;
+		height: 43px;
+	}
+	.header_layout_3.stricky-fixed .main_menu_list > .dropdown > .dropdown-menu {
+		margin-top: 23px;
+	}
+	.header_layout_3.stricky-fixed .dropdown-menu:before {
+		top: -23px;
+		height: 23px;
+	}
+	.review_marquee_vertical_up,
+	.review_marquee_vertical_bottom {
+		height: 720px;
+	}
+}
+/* Media Screen 13606px - End
+================================================== */
+
+/* Media Screen 1199px - Start
+================================================== */
+@media screen and (max-width: 1199px) {
+	.main_menu_list > li > a {
+		font-size: 16px;
+	}
+	.hero_investment_solution h1 {
+		font-size: 54px;
+		line-height: 64px;
+	}
+	.hero_investment_solution [class*="decoration_item shape_dollar"] {
+		display: none;
+	}
+	.hotline_btn {
+		font-size: 14px;
+		padding: 12px 15px;
+	}
+	.heading_block .heading_text {
+		font-size: 42px;
+		line-height: 48px;
+	}
+	.heading_block .heading_description {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.funfact_block .funfact_value {
+		font-size: 30px;
+	}
+	.funfact_block .funfact_title {
+		font-size: 16px;
+	}
+	.btn {
+		padding: 21px 40px;
+	}
+	.features_block {
+		padding: 36px;
+	}
+	.features_block p {
+		margin-left: 0;
+	}
+	.features_block {
+		gap: 20px;
+		flex-direction: column;
+	}
+	.features_block .features_title {
+		margin-bottom: 10px;
+	}
+	.features_block .features_icon {
+		margin-bottom: 10px;
+	}
+	.features_block .features_icon {
+		width: 54px;
+	}
+	.cta_wrapper {
+		padding: 66px 50px 70px;
+	}
+	.pricing_block {
+		gap: 44px;
+		flex-direction: column;
+	}
+	.pricing_block .features_title {
+		margin-bottom: 18px;
+	}
+	.pricing_block .btn {
+		margin-top: 20px;
+	}
+	.pricing_blocks_wrapper {
+		gap: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		.pricing_block {
+			margin: 0;
+			width: calc(50% - 10px);
+		}
+	}
+	.pricing_section {
+		background-size: 100% 500px;
+	}
+	.container {
+		max-width: 100%;
+	}
+	.footer_layout_1 [class*="decoration_item shape_dollar"] {
+		display: none;
+	}
+	.backtotop {
+		bottom: 100px;
+	}
+	.process_steps_block {
+		gap: 50px 10px;
+	}
+	.ps_policy_section,
+	.footer_layout_3,
+	.payment_methods_section {
+		padding: 0 0;
+	}
+	.footer_layout_3 .content_wrap {
+		padding: 100px 0 40px;
+	}
+	.payment_solutions .backtotop {
+		bottom: 150px;
+	}
+	.payment_methods_section .content_wrapper {
+		padding: 120px 0;
+	}
+	.header_layout_2 .office_hour_text {
+		margin-left: 40px;
+	}
+	.header_layout_2 .hotline_btn {
+		margin-right: 20px;
+	}
+	.header_layout_2 .btns_group {
+		gap: 10px;
+	}
+	.hero_financial_consulting {
+		padding: 50px 30px 40px;
+	}
+	.hero_financial_consulting .image_block {
+		margin-top: 36px;
+	}
+	.financial_analyst_funfact .funfact_block.left_layout .funfact_value {
+		width: 100px;
+		font-size: 36px;
+	}
+	.financial_analyst_funfact {
+		gap: 30px;
+	}
+	.financial_analyst_funfact .ticker {
+		margin-top: 20px;
+	}
+	.pricing_block.style_2 > * {
+		width: 100%;
+		max-width: 100%;
+	}
+	.pricing_block.style_2 {
+		padding: 0 40px 50px;
+	}
+	.pricing_block .pricing_amount {
+		width: 100%;
+		text-align: center;
+		padding: 50px 40px 70px;
+		clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0% 70%, 0 0);
+	}
+	.financial_consulting .container-fluid, .footer_layout_4 {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.footer_layout_4 .newslatter_wrapper {
+		margin: 60px 0 80px;
+	}
+	.footer_layout_4 {
+		padding: 0;
+	}
+	.footer_layout_4 .cta_section {
+		margin: 0 auto;
+		border-radius: 10px;
+		width: calc(100% - 30px);
+	}
+	.footer_layout_4 .contact_info {
+		padding: 70px 0 80px;
+	}
+	.footer_layout_4 [class*="shape_nate"] {
+		display: none;
+	}
+	.container-fluid {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.insurance_achievement_funfacts .funfact_block {
+		padding: 40px 24px;
+	}
+	.index_insurance .btns_group {
+		margin-left: 0;
+		>li:nth-child(2) {
+			display: none;
+		}
+	}
+	.car_insurance_feature_section [class*="shape_car_path"] {
+		max-width: 90px;
+	}
+	.car_insurance_cta_section .shape_star_2,
+	.review_section .shape_car_path_1,
+	.review_section .shape_nate_1 {
+		display: none;
+	}
+	.policy_items.process_steps_block > li:not(:last-child):after {
+		display: none;
+	}
+}
+/* Media Screen 1199px - End
+================================================== */
+
+/* Media Screen 1024px - Start
+================================================== */
+@media screen and (max-width: 1024px) {
+	.hero_online_banking .hero_hand_image {
+		bottom: 213px;
+		max-width: 450px;
+		right: -60px;
+	}
+	.hero_online_banking .ob_hero_img {
+		right: 106px;
+		bottom: 33%;
+		max-width: 380px;
+	}
+	.hero_section h1 {
+		font-size: 60px;
+		line-height: 70px;
+	}
+	.funfact_block.style_2 {
+		padding: 30px;
+	}
+	.money_transactions_card {
+		height: 455px;
+	}
+	.online_banking_process > li {
+		width: 50%;
+	}
+	.hero_payment_solutions .container-fluid > .row > [class*="col-"] {
+		width: 100%;
+		max-width: 100%;
+	}
+	.hero_payment_solutions .shape_nate_2 {
+		right: -34%;
+	}
+	.footer_layout_3 .cta_section .btn {
+		font-size: 20px;
+		padding: 26px 60px;
+	}
+	.hero_financial_consulting h1 {
+		font-size: 54px;
+		line-height: 64px;
+	}
+	.hero_financial_consulting p {
+		font-size: 18px;
+		line-height: 29px;
+	}
+	.financial_analyst_funfact .funfact_block.left_layout {
+		gap: 10px;
+		flex-direction: column;
+	}
+	.financial_analyst_funfact .funfact_block.left_layout .funfact_value {
+		width: 100%;
+	}
+	.financial_analyst_funfact .funfact_block.left_layout {
+		align-items: flex-start;
+	}
+	.post_meta {
+		gap: 10px 20px;
+	}
+	.footer_layout_4 .cta_section .heading_block .heading_text {
+		font-size: 48px;
+		line-height: 58px;
+	}
+	.insurance_decoration_wrap .shape_nate_1 {
+		right: -274px;
+	}
+	.service_block.style_3 {
+		border-radius: 10px;
+		padding: 30px 10px 10px;
+	}
+	.service_block.style_3 p {
+		max-width: 100%;
+		line-height: 24px;
+		margin: 0 auto 40px;
+	}
+	.feedback_form_wrap .form-group .form-select {
+		font-size: 20px;
+	}
+	.hero_car_insurance .hero_title {
+		font-size: 54px;
+		line-height: 62px;
+	}
+	.hero_car_insurance {
+		background-position: right -1% top;
+	}
+	.car_insurance_quote_form {
+		padding: 36px 30px 30px;
+	}
+	.car_insurance_process {
+		padding: 36px 30px;
+	}
+	.footer_layout_6 .iconbox_block p {
+		font-size: 18px;
+	}
+	.footer_layout_6 .app_download_wrapper .hand_image {
+		max-width: 130px;
+	}
+	.page_header [class*="shape_pattern"] {
+		max-width: 200px;
+	}
+	.page_header .shape_dollar_2 {
+		top: 150px;
+		right: 150px;
+		max-width: 50px;
+	}
+	.page_header {
+		padding: 160px 0 120px;
+	}
+	.service_section .shape_lines_flow_2 {
+		left: -130px;
+	}
+	.page_header {
+		padding: 140px 0 100px;
+	}
+	.page_title {
+		font-size: 60px;
+		line-height: 70px;
+	}
+	.image_hover_effect_block .content_wrap {
+		padding: 20px;
+	}
+	.sidebar > * {
+		padding: 38px 30px 40px;
+	}
+	.item_details_info_heading {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	.item_details_heading {
+		font-size: 46px;
+		line-height: 58px;
+	}
+	.other_post_nav a:not(:nth-child(2)) {
+		gap: 20px;
+		padding: 30px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.other_post_nav a:last-child i {
+		order: 0;
+	}
+	.other_post_nav a:last-child {
+		text-align: right;
+		align-items: flex-end;
+	}
+	.comment_form,
+	.job_apply_form {
+		padding: 50px;
+	}
+	.review_marquee_vertical_up,
+	.review_marquee_vertical_bottom {
+		height: 780px;
+	}
+	.hero_car_insurance .hero_car {
+		right: 36.7%;
+	}
+}
+/* Media Screen 1024px - End
+================================================== */
+
+/* Media Screen 991px - Start
+================================================== */
+@media screen and (max-width: 991px) {
+	.container,
+	.container-fluid {
+		max-width: 730px;
+	}
+	.site_header .btns_group > li:first-child {
+		display: inline-block;
+	}
+	.hotline_btn {
+		padding: 10px 15px;
+	}
+	.header_layout_1:not(.stricky-fixed) .main_menu_list > li > a,
+	.header_layout_1:not(.stricky-fixed) .main_menu_list > li > a:after {
+		color: #012A2B;
+	}
+	.main_menu_list {
+		gap: 0;
+	}
+	.site_header .main_menu {
+		top: 102px;
+	}
+	.site_header .stricky-fixed .main_menu {
+		top: 71px;
+	}
+	.hero_investment_solution {
+		text-align: center;
+	}
+	.hero_investment_solution .hero_image {
+		width: 100%;
+		float: none;
+		max-width: 400px;
+		margin: 30px auto 0;
+	}
+	.main_menu_list .dropdown > a:after {
+		margin: 2px 0 0 2px;
+	}
+	.cta_wrapper {
+		padding: 50px 40px;
+	}
+	.cta_wrapper .cta_title {
+		font-size: 46px;
+		line-height: 54px;
+	}
+	.pricing_blocks_wrapper .pricing_block {
+		width: 100%;
+	}
+	.site_header .btn {
+		font-size: 16px;
+		padding: 12px 22px;
+	}
+	.hero_online_banking .hero_hand_image,
+	.hero_online_banking .ob_hero_img {
+		display: none;
+	}
+	.hero_online_banking {
+		text-align: center;
+	}
+	.hero_online_banking {
+		padding: 170px 0 0;
+	}
+	.hero_online_banking .hero_shape_image {
+		margin: 40px 0 60px;
+	}
+	.online_banking_features .imagebox_block {
+		padding: 40px 30px;
+	}
+	.online_banking_features .imagebox_block .image_block {
+		height: auto;
+	}
+	.online_banking_features .imagebox_block .imagebox_title {
+		font-size: 26px;
+		max-width: 100%;
+		line-height: 36px;
+		margin: 30px 0 8px;
+	}
+	.online_banking_features .imagebox_block p {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.online_banking_features .imagebox_block .imagebox_content {
+		max-width: 100%;
+		margin-bottom: 40px;
+	}
+	.money_transactions_card {
+		height: auto;
+		.image_block {
+			margin-bottom: 60px;
+		}
+	}
+	.integrated_wrapper svg {
+		display: none;
+	}
+	.integrated_wrapper img {
+		margin: auto;
+		max-width: 60px;
+	}
+	.footer_layout_2 .social_links_block {
+		margin: 30px 0;
+	}
+	.footer_layout_2 .content_wrap {
+		padding: 60px 50px;
+	}
+	.ob_process_section + .review_section .online_banking_review {
+		z-index: 2;
+		padding: 60px 50px;
+	}
+	.online_banking_features .col-lg-4 .imagebox_block .image_block {
+		height: auto;
+	}
+	.blog_post_block .post_image {
+		margin-bottom: 20px;
+	}
+	.section_space {
+		padding: 120px 0;
+	}
+	.footer_layout_3 .cta_section {
+		text-align: center;
+	}
+	.footer_layout_3 .footer_bottom {
+		margin-top: 80px;
+		text-align: center;
+		padding: 40px 30px;
+	}
+	.footer_layout_3 .footer_info_title {
+		margin-bottom: 22px;
+	}
+	.footer_layout_3 {
+
+		.content_wrap {
+			.row:not(.footer_bottom .row) {
+				margin: -30px -15px;
+				[class*="col-"] {
+					padding: 30px 15px;
+				}
+			}
+		}
+	}
+	.header_layout_2 .icon_block {
+		width: 40px;
+		height: 40px;
+		font-size: 16px;
+	}
+	.header_layout_2 .main_menu {
+		top: 170px;
+	}
+	.header_layout_2 .stricky-fixed .main_menu {
+		top: 59px;
+	}
+	.fc_decoration_wrap .shape_note_1 {
+		right: -60px;
+	}
+	.fc_decoration_wrap .shape_coin {
+		left: -36px;
+	}
+	.footer_layout_4 .footer_info_title {
+		margin-bottom: 18px;
+	}
+	.footer_layout_4 .footer_bottom {
+		text-align: center;
+	}
+	.hero_insurance {
+		text-align: center;
+	}
+	.hero_insurance .hero_image {
+		margin: 40px auto auto;
+	}
+	.hero_insurance p {
+		margin: auto auto 30px;
+	}
+	.insurance_achievement_funfacts {
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	.insurance_achievement_funfacts .image_block {
+		max-width: 100%;
+	}
+	.insurance_achievement_funfacts .funfact_block {
+		width: calc(50% - 10px);
+	}
+	.review_updown_style {
+		padding-top: 0;
+	}
+	.review_updown_style > div:first-child {
+		margin-top: 0;
+	}
+	.insurance_clients_logo_wrap .clients_logo > li {
+		width: calc(50% - 1px);
+	}
+	.header_layout_3 {
+		padding: 20px 0;
+	}
+	.header_layout_3 .main_menu {
+		top: 80px;
+	}
+	.header_layout_3.stricky-fixed .main_menu {
+		top: 61px;
+	}
+	.header_layout_3 + main {
+		padding-top: 80px;
+	}
+	.hero_car_insurance .rating_block {
+		margin: 40px 0;
+	}
+	.hero_car_insurance .clients_logo {
+		margin-bottom: 30px;
+	}
+	.hero_car_insurance [class*="shape_nate"] {
+		display: none;
+	}
+	.hero_car_insurance {
+		background-size: 0%;
+	}
+	.table thead th {
+		padding: 20px 50px;
+	}
+	.table td {
+		padding: 16px 50px;
+	}
+	.car_process_section .shape_nate_2 {
+		right: -110px;
+	}
+	.hero_car_insurance .hero_title {
+		font-size: 42px;
+		line-height: 48px;
+	}
+	.table_wrapper {
+		overflow-x: scroll;
+		table {
+			width: 1000px;
+		}
+	}
+	.car_insurance_feature_section [class*=shape_car_path],
+	.footer_layout_6 [class*=shape_car_path] {
+		display: none;
+	}
+	.car_insurance_cta .image_wrapper {
+		gap: 30px;
+		flex-direction: column;
+	}
+	.car_insurance_cta .pricing_list {
+		gap: 4px;
+		width: 100%;
+		margin-left: 0;
+	}
+	.car_insurance_cta {
+		padding: 30px;
+	}
+	.footer_layout_6 .app_download_wrapper,
+	.footer_layout_6 .contact_wrapper {
+		padding: 30px;
+	}
+	.car_insurance .backtotop {
+		bottom: 64px;
+	}
+	.footer_layout_6 .app_download_wrapper .heading_block {
+		margin-bottom: 10px;
+	}
+	.footer_layout_6 .btns_group {
+		padding: 36px 0 160px;
+		background-size: 100%;
+	}
+	.page_header [class*="shape_dollar"] {
+		display: none;
+	}
+	[class*=_details_section] .shape_nate_2 {
+		left: -380px;
+	}
+	.item_details_image {
+		margin-bottom: 30px;
+	}
+	.item_details_content p {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.item_details_heading {
+		font-size: 42px;
+		line-height: 56px;
+		margin-bottom: 20px;
+	}
+	.item_details_info_heading {
+		font-size: 36px;
+		line-height: 46px;
+		margin: 50px 0 18px;
+	}
+	.item_details_content .process_steps_block > li {
+		margin-top: 0;
+	}
+	.item_details_content .process_steps_block {
+		border-width: 0;
+	}
+	.video_btn .btn_icon {
+		width: 70px;
+		height: 70px;
+		font-size: 20px;
+	}
+	.project_section .shape_dollar_1 {
+		right: -30px;
+		max-width: 70px;
+	}
+	.project_section .shape_nate_4 {
+		bottom: -420px;
+	}
+	.project_section .shape_nate_3 {
+		right: -310px;
+		bottom: -360px;
+	}
+	.gmap_canvas iframe {
+		height: 400px;
+	}
+	.comment_form {
+		padding: 40px;
+	}
+	body:has(.stricky-fixed) .stricky.original {
+		display: none;
+	}
+	.review_marquee_vertical_up,
+	.review_marquee_vertical_bottom {
+		height: 670px;
+	}
+	.hero_car_insurance .hero_car {
+		display: none;
+	}
+}
+/* Media Screen 991px - End
+================================================== */
+
+/* Media Screen 767px - Start
+================================================== */
+@media screen and (max-width: 767px) {
+	.header_layout_1 {
+		padding: 20px 0;
+	}
+	.site_header .main_menu {
+		top: 81px;
+	}
+	.site_header.sticky .main_menu {
+		top: 69px;
+	}
+	.footer_layout_1 .footer_bottom {
+		text-align: center;
+	}
+	.backtotop {
+		bottom: 156px;
+	}
+	.hero_payment_solutions .hero_title {
+		font-size: 48px;
+		line-height: 60px;
+		margin: 20px 0 0px;
+	}
+	.hero_payment_solutions .shape_nate_2 {
+		right: -54%;
+	}
+	.heading_block.style_2 .heading_text {
+		font-size: 42px;
+		line-height: 54px;
+	}
+	.ps_contact_process_section .shape_arrow_1 {
+		right: 15px;
+	}
+	.ps_contact_process_section .shape_nate_1 {
+		left: -190px;
+	}
+	.ps_policy_section .shape_nate_2 {
+		right: -140px;
+	}
+	.footer_layout_3 .cta_section .heading_text {
+		font-size: 42px;
+		line-height: 54px;
+	}
+	.footer_layout_3 .cta_section .btn {
+		font-size: 18px;
+		padding: 20px 40px;
+	}
+	.header_layout_2 .main_menu {
+		top: 168px;
+	}
+	.header_layout_2.sticky .main_menu {
+		top: 60px;
+	}
+	.footer_layout_4 .cta_section .heading_block {
+		text-align: center;
+	}
+	.item_details_heading {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	.postabmin_block {
+		flex-direction: column;
+	}
+	.career_block {
+		gap: 30px;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 30px 35px;
+	}
+	.header_layout_3 .btns_group > li:last-child {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 725px) {
+	.review_marquee_vertical_up,
+	.review_marquee_vertical_bottom {
+		height: 730px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.header_layout_1 .btns_group {
+		>li:last-child {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 662px) {
+	.review_marquee_vertical_up,
+	.review_marquee_vertical_bottom {
+		height: 780px;
+	}
+}
+/* Media Screen 767px - End
+================================================== */
+
+/* Media Screen 680px - Start
+================================================== */
+@media screen and (max-width: 680px) {
+	.section_space {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.about_section .shape_lines_flow_1 {
+		right: -270px;
+	}
+	.about_section .shape_lines_flow_2 {
+		left: -460px;
+	}
+	.cta_wrapper .cta_title {
+		font-size: 36px;
+		line-height: 42px;
+	}
+	.cta_wrapper [class*="shape_dollar"] {
+		display: none;
+	}
+	.service_section .shape_lines_flow_2 {
+		left: -130px;
+	}
+	.hero_investment_solution h1 {
+		font-size: 42px;
+		line-height: 48px;
+		margin-bottom: 18px;
+	}
+	.hero_investment_solution h1 span {
+		padding: 0 10px 2px;
+	}
+	.hero_investment_solution {
+		padding: 120px 0 0;
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.hero_section p {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.heading_block .heading_text {
+		font-size: 36px;
+		line-height: 42px;
+	}
+	.about_image .chart_image {
+		top: 150px;
+		right: 10px;
+		max-width: 90px;
+	}
+	.about_image .mac_image {
+		max-width: 330px;
+		margin: auto auto -115px;
+	}
+	.about_image .shape_dollar_1 {
+		top: 20px;
+		left: 50px;
+		max-width: 50px;
+	}
+	.policy_block .policy_content {
+		padding: 50px 40px 41px;
+	}
+	.review_block .review_comment {
+		font-size: 20px;
+		line-height: 32px;
+		margin: 30px 0 50px;
+	}
+	.faq_man_image .chart_image {
+		left: -15px;
+		max-width: 130px;
+	}
+	.site_footer .heading_block .heading_text {
+		font-size: 36px;
+		line-height: 42px;
+	}
+	.ob_process_section + .review_section .online_banking_review {
+		margin-top: 100px;
+	}
+	.hero_online_banking {
+		.hero_title {
+			font-size: 54px;
+			line-height: 64px;
+			margin: 20px 0 12px;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.hero_online_banking .clients_logo_carousel .badge {
+		margin-bottom: 35px;
+	}
+	.heading_block.style_2 .heading_text {
+		font-size: 42px;
+		line-height: 54px;
+	}
+	.video_btn .btn_icon {
+		width: 70px;
+		height: 70px;
+		font-size: 20px;
+	}
+	.online_banking_process > li {
+		width: 100%;
+	}
+	.online_banking_process > li:not(:last-child) {
+		border-width: 0 0 1px 0;
+	}
+	.footer_layout_2 hr {
+		margin: 50px 0;
+	}
+	.review_block_2 .flex_content {
+		gap: 20px;
+		flex-direction: column;
+	}
+	.integrated_wrapper > ul:first-child > li img {
+		margin-top: 0;
+	}
+	.car_insurance_cta .avatar_image,
+	.car_insurance_cta .icon_block {
+		width: 60px;
+		height: 60px;
+	}
+	.car_insurance_cta .icon_block img {
+		max-width: 26px;
+	}
+	.car_insurance_cta .image_wrapper_2 {
+		padding: 0 30px;
+	}
+	.service_section [class*="decoration_item shape_"] {
+		display: none;
+	}
+	.image_hover_effect_block .item_title {
+		font-size: 20px;
+	}
+	.other_post_nav {
+		flex-direction: column;
+	}
+	.other_post_nav a:not(:nth-child(2)) {
+		width: 100%;
+	}
+	.comment_item .comment_reply_btn {
+		position: static;
+		margin-top: 20px;
+	}
+}
+/* Media Screen 680px - End
+================================================== */
+
+/* Media Screen 575px - Start
+================================================== */
+@media screen and (max-width: 575px) {
+	.hero_payment_solutions .hero_title {
+		font-size: 38px;
+		line-height: 50px;
+	}
+	.hero_payment_solutions .btns_group .funfact_block.left_layout,
+	.hero_payment_solutions .btns_group .funfact_block {
+		max-width: 146px;
+	}
+	.hero_payment_solutions .btns_group .funfact_block.left_layout .funfact_title {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.hero_payment_solutions .btns_group {
+		gap: 20px;
+	}
+	.heading_block.style_2 .heading_text {
+		font-size: 36px;
+		line-height: 48px;
+	}
+	.contact_process_content .site_logo .site_link {
+		padding: 20px 36px;
+	}
+	.ps_policy_items.process_steps_block .step_block_icon {
+		width: 90px;
+		height: 90px;
+	}
+	.ps_policy_items.process_steps_block .step_block_icon img {
+		max-height: 36px;
+	}
+	.process_steps_block .step_block_title {
+		font-size: 22px;
+		line-height: 32px;
+		margin: 14px 0 6px;
+	}
+	.process_steps_block > li {
+		max-width: calc(50% - 10px);
+	}
+	.ps_pricing_block {
+		gap: 20px;
+		flex-direction: column;
+	}
+	.ps_pricing_block > * {
+		width: 100%;
+	}
+	.ps_pricing_block .pricing_feature_list {
+		padding: 0;
+	}
+	.footer_layout_3 .cta_section .heading_text {
+		font-size: 36px;
+		line-height: 48px;
+	}
+	.header_layout_2 .hotline_btn {
+		display: none;
+	}
+	.header_layout_2 .main_menu {
+		top: 155px;
+	}
+	.hero_financial_consulting h1 {
+		font-size: 42px;
+		line-height: 48px;
+	}
+	.hero_financial_consulting {
+		padding: 50px 20px 43px;
+	}
+	.footer_layout_4 .cta_section .heading_block .heading_text {
+		font-size: 42px;
+		line-height: 52px;
+	}
+	.newslatter_wrapper {
+		padding: 30px;
+	}
+	.newslatter_wrapper .newslatter_form {
+		gap: 10px;
+		flex-direction: column;
+		>* {
+			width: 100%;
+		}
+	}
+	.newslatter_wrapper .newslatter_form input {
+		height: auto;
+		padding: 19px 24px;
+	}
+	.footer_layout_4 .btn {
+		padding: 21px 30px;
+	}
+	.hero_financial_consulting h1 {
+		font-size: 38px;
+		line-height: 44px;
+	}
+	.heading_block .heading_text {
+		font-size: 30px;
+		line-height: 38px;
+	}
+	.iconlist_block > li {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.iconlist_block .iconlist_icon img {
+		width: 22px;
+	}
+	.pricing_toggle_btn {
+		gap: 12px;
+		font-size: 16px;
+	}
+	.footer_layout_4 .cta_section .heading_block .heading_text {
+		font-size: 36px;
+		line-height: 46px;
+	}
+	.footer_layout_4 .btn {
+		padding: 18px 30px;
+	}
+	.hero_insurance h1 {
+		font-size: 48px;
+		line-height: 58px;
+	}
+	.hero_insurance {
+		padding: 120px 0 70px;
+	}
+	.feedback_form_wrap {
+		padding: 40px 30px 50px;
+	}
+	.footer_layout_5 .copyright_text {
+		text-align: center;
+	}
+	.footer_layout_5 .footer_top_wrapper {
+		gap: 50px;
+		flex-direction: column;
+	}
+	.footer_layout_5 .shape_nate_1 {
+		left: -60px;
+	}
+	.footer_layout_5 .shape_nate_2 {
+		right: -90px;
+	}
+	.footer_layout_5 [class*="shape_pattern"] {
+		max-width: 200px;
+	}
+	.team_block.style_3.image_left {
+		gap: 20px;
+		flex-direction: column;
+		>* {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+	.team_block.style_3.image_left .team_member_image {
+		max-width: 100%;
+	}
+	.team_block.style_3.image_left .team_member_content {
+		padding: 0 20px 20px;
+	}
+	.insurance_clients_logo_wrap {
+		padding: 50px 30px;
+	}
+	.insurance_clients_logo_wrap .clients_logo img {
+		max-width: 90px;
+	}
+	.insurance_clients_logo_wrap .clients_logo > li {
+		height: 70px;
+	}
+	.insurance_decoration_wrap .shape_nate_6 {
+		right: -140px;
+	}
+	.footer_layout_6 .btns_group {
+		padding: 36px 0 50px;
+	}
+	.page_title {
+		font-size: 54px;
+		line-height: 66px;
+	}
+	.item_details_heading {
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.item_details_info_heading {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.comment_item {
+		gap: 20px;
+		flex-direction: column;
+	}
+	.comments_list > li .comments_list {
+		padding: 30px 0 0 30px;
+	}
+	.error_section h1 {
+		font-size: 42px;
+		line-height: 56px;
+		margin: 36px 0 10px;
+	}
+	.error_section [class*="shape_dollar"] {
+		display: none;
+	}
+	.error_section .btns_group {
+		padding-top: 10px;
+		.btn {
+			width: 100%;
+		}
+	}
+	.error_section .form-group input.form-control {
+		height: 60px;
+	}
+	.review_marquee_vertical_up,
+	.review_marquee_vertical_bottom {
+		height: 560px;
+	}
+	.review_updown_style > div:last-child {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 553px) {
+	.review_marquee_vertical_up,
+	.review_marquee_vertical_bottom {
+		height: 620px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.review_marquee_vertical_up,
+	.review_marquee_vertical_bottom {
+		height: 680px;
+	}
+}
+/* Media Screen 575px - End
+================================================== */
+
+/* Media Screen 425px - Start
+================================================== */
+@media screen and (max-width: 425px) {
+	.hero_online_banking .icon_star_1 {
+		top: 100px;
+		right: 15px;
+	}
+	.hero_online_banking .icon_star_2 {
+		left: 15px;
+	}
+	.hero_online_banking .hero_title {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.hero_online_banking {
+		padding: 130px 0 0;
+	}
+	.heading_block.style_2 .heading_text {
+		font-size: 36px;
+		line-height: 46px;
+	}
+	.about_image_2 {
+		gap: 15px;
+		>li {
+			max-width: calc(50% - 15px);
+		}
+	}
+	.ob_process_section + .review_section .online_banking_review {
+		padding: 50px 40px;
+	}
+	.footer_layout_2 .content_wrap {
+		padding: 50px 40px;
+	}
+	.hero_payment_solutions .shape_nate_2 {
+		max-width: 440px;
+	}
+	.hero_payment_solutions .shape_nate_1 {
+		max-width: 320px;
+	}
+	.hero_payment_solutions {
+		padding: 140px 0 0;
+	}
+	.contact_process_content .process_line {
+		margin: -20px 0 -60px;
+	}
+	.contact_process_step .iconbox_block {
+		padding: 30px;
+	}
+	.ps_contact_process_section .shape_arrow_2 {
+		left: 15px;
+	}
+	.process_steps_block > li {
+		max-width: calc(100% - 10px);
+	}
+	.payment_solutions .backtotop {
+		bottom: 235px;
+	}
+	.footer_layout_4 .newslatter_wrapper .heading_block .heading_text {
+		font-size: 30px;
+		line-height: 38px;
+	}
+	.insurance_achievement_funfacts .funfact_block {
+		width: calc(100% - 10px);
+	}
+	.page_title {
+		font-size: 48px;
+		line-height: 56px;
+	}
+	.error_section h1 {
+		font-size: 34px;
+		line-height: 48px;
+	}
+}
+
+@media screen and (max-width: 377px) {
+	.review_marquee_vertical_up,
+	.review_marquee_vertical_bottom {
+		height: 730px;
+	}
+}
+/* Media Screen 425px - End
+================================================== */
+
+/* Media Screen 375px - Start
+================================================== */
+@media screen and (max-width: 375px) {
+	.integrated_wrapper > ul {
+		gap: 10px;
+	}
+	.integrated_wrapper img {
+		max-width: 50px;
+	}
+	.integrated_wrapper .site_logo .site_link {
+		padding: 16px 28px;
+	}
+	.header_layout_2 .header_top {
+		padding: 20px 0;
+	}
+	.header_layout_2 .main_menu {
+		top: 137px;
+	}
+	.header_layout_2 + main {
+		padding-top: 150px;
+	}
+	.pricing_toggle_btn {
+		gap: 8px;
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.pricing_block .pricing_amount {
+		padding: 40px 30px 70px;
+	}
+	.pricing_block .pricing_amount small {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.pricing_block .pricing_amount span {
+		font-size: 42px;
+		line-height: 48px;
+	}
+	.service_block .service_title {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.service_block.style_2 {
+		padding: 40px 30px;
+	}
+	.badge .fa-circle {
+		font-size: 10px;
+	}
+	.badge.style_2 {
+		gap: 5px;
+	}
+	.service_block.style_2 p {
+		padding-bottom: 20px;
+	}
+	.fc_decoration_wrap .shape_percent {
+		left: 15px;
+		bottom: 40px;
+		max-width: 40px;
+	}
+	.fc_decoration_wrap .shape_note_2 {
+		right: -30px;
+		bottom: 130px;
+		max-width: 80px;
+	}
+	.pricing_block.style_2 {
+		padding: 0 20px 50px;
+	}
+	.pricing_block.style_2 {
+		.btn {
+			font-size: 16px;
+			padding: 20px 20px;
+		}
+	}
+	.pricing_block .pricing_title {
+		font-size: 24px;
+		line-height: 34px;
+	}
+	.review_block_3 .review_comment {
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 40px;
+	}
+	.review_block_3 {
+		padding: 30px;
+	}
+	.review_block_3 .authorbox_block .author_name {
+		font-size: 16px;
+		margin-bottom: 6px;
+	}
+	.btn {
+		padding: 18px 30px;
+	}
+	.blog_post_block .post_title {
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.hero_insurance h1 {
+		font-size: 42px;
+		line-height: 48px;
+	}
+	.heading_block.style_2 .heading_text {
+		font-size: 32px;
+		line-height: 42px;
+	}
+	[class*=col-lg-3] .service_block.style_3 .shape_circle {
+		top: -50%;
+	}
+	.page_title {
+		font-size: 42px;
+		line-height: 52px;
+		margin-bottom: 10px;
+	}
+	.breadcrumb_nav > li {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 346px) {
+	.review_marquee_vertical_up,
+	.review_marquee_vertical_bottom {
+		height: 780px;
+	}
+}
+/* Media Screen 375px - End
+================================================== */
+
+/* Media Screen 320px - Start
+================================================== */
+@media screen and (max-width: 320px) {
+	.hero_investment_solution h1 {
+		font-size: 36px;
+		line-height: 42px;
+	}
+	.heading_block .heading_text {
+		font-size: 30px;
+		line-height: 38px;
+	}
+	.funfact_block .funfact_title {
+		font-size: 14px;
+	}
+	.funfact_block .funfact_value {
+		font-size: 24px;
+	}
+	.cta_wrapper {
+		padding: 40px 30px;
+		text-align: center;
+	}
+	.cta_wrapper .cta_title {
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.btn {
+		font-size: 16px;
+		padding: 18px 30px;
+	}
+	.service_block {
+		padding: 40px 30px;
+	}
+	.accordion-item .accordion-button {
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.site_footer .heading_block .heading_text {
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.newsletter_input input {
+		padding: 0 0px 0 40px;
+	}
+	.newsletter_input label {
+		left: 16px;
+	}
+}
+/* Media Screen 320px - End
+================================================== */

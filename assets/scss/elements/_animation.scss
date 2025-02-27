@@ -1,0 +1,98 @@
+/* 2.01 - Template CSS Animations - Start
+================================================== */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes phoneRinging {
+  from {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  20%, 32%, 44%, 56%, 68% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  23%, 35%, 47%, 59%, 71% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  26%, 38%, 50%, 62%, 74% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  29%, 41%, 53%, 65%, 77% {
+    transform: rotate3d(0, 0, 1, -15deg);
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+.phoneRinging {
+  animation: phoneRinging 1.5s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+
+// Ripple Effect
+@keyframes ripple {
+  0% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+.ripple {
+  animation: ripple 1.5s linear infinite;
+}
+
+// Dash Line Animation
+.path {
+  stroke-dasharray: 6;
+  stroke-dashoffset: 6;
+  animation: dash 4s linear infinite;
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.path_2 {
+  stroke-dasharray: 6;
+  stroke-dashoffset: 6;
+  animation: dashTwo 4s linear infinite;
+}
+@keyframes dashTwo {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+/* 2.01 - Template CSS Animations - End
+================================================== */

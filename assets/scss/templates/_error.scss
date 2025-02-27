@@ -1,0 +1,61 @@
+/* 4.01 - 404 Error Page - Start
+================================================== */
+.error_section {
+	display: flex;
+	padding: 80px 0;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	.error_image {
+		margin: auto;
+		max-width: 700px;
+	}
+	h1 {
+		font-size: 50px;
+		line-height: 65px;
+		margin: 56px 0 13px;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 32px;
+		margin-bottom: 31px;
+	}
+	.form-group {
+		margin: auto;
+		max-width: 580px;
+		input.form-control {
+			height: 70px;
+		}
+	}
+	.form-group .icon_block {
+		top: 26px;
+	}
+	.btn:before {
+		background-color: var(--bs-primary);
+	}
+
+	.shape_dollar_1 {
+		top: 146px;
+		left: 62px;
+		max-width: 55px;
+	}
+	.shape_dollar_2 {
+		top: 180px;
+		right: 164px;
+		max-width: 56px;
+	}
+	.shape_dollar_3 {
+		right: 174px;
+		bottom: 154px;
+		max-width: 42px;
+	}
+	.shape_dollar_4 {
+		left: 150px;
+		bottom: 200px;
+		max-width: 32px;
+		filter: blur(2px);
+	}
+}
+/* 4.01 - 404 Error Page - End
+================================================== */

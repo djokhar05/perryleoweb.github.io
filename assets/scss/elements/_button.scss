@@ -1,0 +1,183 @@
+/* 2.05 - Buttons - Start
+================================================== */
+
+// Buttons Group - Start
+.btns_group {
+	gap: 30px;
+	display: flex;
+	padding: 50px 0;
+	align-items: center;
+	justify-content: center;
+}
+// Buttons Group - End
+
+// Button Fill - Start
+.btn {
+	gap: 12px;
+	border: 0;
+	line-height: 1;
+	font-size: 18px;
+	overflow: hidden;
+	font-weight: 700;
+	transition: 300ms;
+	position: relative;
+	padding: 26px 40px;
+	align-items: center;
+	letter-spacing: 1px;
+	display: inline-flex;
+	letter-spacing: -0.2px;
+	justify-content: center;
+	border-radius: var(--bs-border-radius-sm);
+	&:before {
+		left: 50%;
+		bottom: -200%;
+		width: 200%;
+		height: 200%;
+		content: '';
+		z-index: -1;
+		position: absolute;
+		border-radius: 50%;
+		transform: translateX(-50%);
+		transition: var(--bs-transition);
+		background-color: var(--bs-white);
+	}
+	.btn_icon {
+		margin: 0 0 -1px;
+	}
+	&:hover {
+		transform: translateY(-2px);
+		&:before {
+			bottom: -70%;
+		}
+	}
+	&.btn-rounded {
+		border-radius: 60px;
+	}
+}
+.btn.btn-main {
+	padding: 26px 50px;
+	position: relative;
+	z-index: 1;
+	.btn_icon {
+		transition: .3s;
+	}
+	&::before {
+		display: none;
+	}
+	&::after {
+		position: absolute;
+		top: -288px;
+		left: -302px;
+		width: 650px;
+		height: 650px;
+		background-image: url(../images/shapes/btn_shape.webp);
+		content: "";
+		z-index: -1;
+		background-repeat: no-repeat;
+		transition: .7s;
+	}
+	&:hover::after {
+		transform: rotate(90deg);
+	}
+	&:hover .btn_icon {
+		transform: translateX(4px);
+	}
+}
+
+.btn.bg-dark {
+	color: var(--bs-white);
+	svg path {
+		transition: .3s;
+	}
+	&:hover {
+		color: var(--bs-dark);
+		svg path {
+			fill: var(--bs-dark);
+		}
+	}
+}
+.btn.bg-secondary {
+	color: var(--bs-white);
+	&:hover {
+		color: var(--bs-dark);
+	}
+}
+
+[class*="btn-outline-"] {
+	border: 1px solid transparent;
+}
+// Button Fill - End
+
+// Btn Link - Start
+.btn-link {
+	gap: 10px;
+	line-height: 1;
+	font-size: 18px;
+	position: relative;
+	padding-bottom: 2px;
+	display: inline-flex;
+	text-decoration: none;
+	color: var(--bs-body-color);
+	font-family: 'SuisseIntl Medium';
+	border-bottom: 1px solid currentColor;
+	&:hover {
+		color: var(--bs-heading-color);
+	}
+}
+// Btn Link - End
+
+// Hotline Button - Start
+@keyframes btnTxtMarqueeY {
+	to {
+		transform: translateY(-200%)
+	}
+}
+
+.hotline_btn {
+	gap: 10px;
+	font-size: 16px;
+	overflow: hidden;
+	font-weight: 500;
+	padding: 13px 20px;
+	position: relative;
+	align-items: center;
+	display: inline-flex;
+	color: var(--bs-white);
+	background-color: #023436;
+	font-family: 'SuisseIntl Medium';
+	border-radius: var(--bs-border-radius-sm);
+	.btn_icon {
+		animation: phoneRinging 1.5s infinite linear;
+		&:has(img) {
+			width: 18px;
+		}
+	}
+	.btn_label {
+		&:after {
+			top: 100%;
+			left: 50%;
+			position: absolute;
+			white-space: nowrap;
+			display: inline-block;
+			content: attr(data-text);
+			transform: translate(-50%, 100%);
+		}
+	}
+}
+// Hotline Button - End
+
+// App Download Buttons - Start
+.app_download_btns {
+	gap: 10px;
+	a {
+		display: block;
+		max-width: 182px;
+		img {
+			display: block;
+		}
+	}
+}
+// App Download Buttons - End
+
+/* 2.05 - Buttons - End
+================================================== */

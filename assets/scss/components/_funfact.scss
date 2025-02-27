@@ -1,0 +1,172 @@
+/* 2.12 - Counter or Funfact - Start
+================================================== */
+.funfact_block {
+	.funfact_value {
+		line-height: 1;
+		font-size: 50px;
+		font-weight: 600;
+		margin-bottom: 6px;
+		align-items: center;
+		display: inline-flex;
+		color: var(--bs-heading-color);
+		font-family: var(--bs-heading-font-family);
+	}
+	.funfact_title {
+		line-height: 1;
+		font-size: 20px;
+		font-weight: 500;
+		color: var(--bs-body-color);
+		font-family: var(--bs-body-font-family);
+	}
+}
+
+.funfact_block.style_2 {
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 52px 60px 52px 50px;
+	background-position: center center;
+	border-radius: var(--bs-border-radius-lg);
+	box-shadow: 19px 122px 35px 0 rgba(0, 0, 0, 0),
+	12px 78px 32px 0 rgba(0, 0, 0, 0.01),
+	7px 44px 27px 0 rgba(0, 0, 0, 0.05),
+	3px 19px 20px 0 rgba(0, 0, 0, 0.09),
+	1px 5px 11px 0 rgba(0, 0, 0, 0.10);
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
+	.funfact_title {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 28px;
+		color: var(--bs-heading-color);
+	}
+}
+
+.funfact_section:has(.insurance_achievement_funfacts) {
+	z-index: 1;
+	margin-top: -330px;
+	position: relative;
+}
+.insurance_achievement_funfacts {
+	gap: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.funfact_block {
+		padding: 40px 30px;
+		border-radius: 10px;
+		background-color: var(--bs-white);
+		box-shadow: 0 4px 10px 0 rgba(0, 61, 43, 0.10);
+		.funfact_icon {
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.funfact_value {
+			margin: 20px 0 8px;
+		}
+		.funfact_title {
+			font-size: 18px;
+		}
+	}
+	.image_block {
+		max-width: 320px;
+	}
+}
+
+// Left Layout - Start
+.funfact_block.left_layout {
+	gap: 20px;
+	display: flex;
+	align-items: flex-start;
+	.funfact_icon {
+		width: 60px;
+		height: 60px;
+		flex: 0 0 auto;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		border-radius: var(--bs-border-radius);
+	}
+	.funfact_value {
+		font-size: 34px;
+		margin-bottom: 4px;
+	}
+	.funfact_title {
+		font-size: 17px;
+	}
+}
+
+.financial_analyst_funfact {
+	gap: 40px;
+	display: flex;
+	flex-direction: column;
+	.funfact_block.left_layout {
+		align-items: center;
+		.funfact_value {
+			margin: 0;
+			width: 155px;
+			flex: 0 0 auto;
+			font-size: 54px;
+		}
+		.funfact_title {
+			font-size: 18px;
+			line-height: 26px;
+		}
+	}
+
+	.ticker {
+		margin-top: 40px;
+	}
+}
+
+.ticker {
+	width: 100%;
+	line-height: 1;
+	font-size: 30px;
+	font-weight: 700;
+	color: transparent;
+	text-transform: uppercase;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--bs-dark);
+	font-family: var(--bs-font-heading-family);
+}
+
+.ticker-component {
+	height: 60px !important;
+}
+
+.ticker-text {
+	padding: 10px 30px;
+	position: relative;
+}
+
+.ticker-text:after {
+	top: 0px;
+	right: -30px;
+	content: "#";
+	position: relative;
+}
+// Left Layout - End
+
+.money_transactions_card {
+	display: flex;
+	height: 532px;
+	background-size: auto;
+	flex-direction: column;
+	padding: 25px 25px 70px;
+	background-repeat: no-repeat;
+	justify-content: space-between;
+	background-position: center bottom;
+	border-radius: var(--bs-border-radius-lg);
+	.btn {
+		align-self: center;
+	}
+}
+
+.row:has(.money_transactions_card) .shape_circle_image {
+	text-align: center;
+}
+/* 2.12 - Counter or Funfact - End
+================================================== */

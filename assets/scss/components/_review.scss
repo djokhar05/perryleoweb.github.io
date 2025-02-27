@@ -1,0 +1,252 @@
+/* 4.08 - Review - Start
+================================================== */
+.review_section {
+	.shape_circle {
+		top: 44%;
+		left: 50%;
+		opacity: 0.4;
+		filter: blur(210px);
+		transform: translateX(-50%);
+		img {
+			width: 304px;
+		}
+	}
+	.shape_dollar_1 {
+		top: 30%;
+		left: 20px;
+		max-width: 60px;
+		filter: blur(2px);
+	}
+	.shape_dollar_2 {
+		right: 30px;
+		bottom: 60px;
+		max-width: 60px;
+		filter: blur(2px);
+	}
+	.shape_star_1 {
+		top: 0;
+		right: 120px;
+	}
+	.shape_star_2 {
+		left: 60px;
+		bottom: 290px;
+	}
+	.shape_arrow_1 {
+		right: 90px;
+		bottom: 200px;
+		max-width: 44px;
+	}
+	.shape_car_path_1 {
+		left: 0;
+		top: -37.1%;
+		max-width: 156px;
+	}
+	.shape_car_path_2 {
+		right: 0;
+		bottom: 0;
+		max-width: 156px;
+	}
+	.shape_nate_1 {
+		top: -30%;
+		right: -140px;
+		max-width: 300px;
+	}
+}
+
+// Review Block Layout 1 - Start
+.review_carousel {
+	padding: 45px 0 0;
+}
+.review_block {
+	position: relative;
+	text-align: center;
+	padding: 0 32px 50px;
+	background-color: var(--bs-dark);
+	border-radius: var(--bs-border-radius-lg);
+	&:before,
+	&:after {
+		left: 0;
+		right: 0;
+		content: '';
+		height: 1px;
+		position: absolute;
+		background: radial-gradient(var(--bs-primary) 0%, transparent 60%);
+	}
+	&:before {
+		top: 0;
+	}
+	&:after {
+		bottom: 0;
+	}
+	.review_avatar {
+		z-index: 1;
+		width: 80px;
+		height: 80px;
+		overflow: hidden;
+		margin-top: -40px;
+		position: relative;
+		border-radius: 100%;
+		display: inline-block;
+	}
+	.review_comment {
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 36px;
+		margin: 40px 0 86px;
+		color: var(--bs-white);
+	}
+	.review_author_name {
+		line-height: 1;
+		font-size: 18px;
+	}
+	.review_author_designation {
+		display: block;
+		font-size: 14px;
+		font-weight: 500;
+	}
+}
+// Review Block Layout 1 - End
+
+// Review Block Layout 2 - Start
+.review_block_2 {
+	.flex_content {
+		display: flex;
+		margin-bottom: 27px;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	.review_comment {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 32px;
+		margin-bottom: 60px;
+		color: var(--bs-white);
+	}
+}
+
+.review_carousel_2 {
+	.carousel_arrows {
+		margin-top: 50px;
+		button {
+			&:first-child {
+				justify-content: flex-end;
+			}
+			&:last-child {
+				justify-content: flex-start;
+			}
+		}
+	}
+}
+// Review Block Layout 2 - End
+
+// Review Block Layout 3 - Start
+.review_block_3 {
+	z-index: 1;
+	position: relative;
+	border-radius: 10px;
+	padding: 40px 40px 50px;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: left center;
+	.quote_icon {
+		top: 40px;
+		right: 40px;
+		z-index: -1;
+		max-width: 52px;
+		position: absolute;
+	}
+	.review_comment {
+		font-size: 26px;
+		font-weight: 500;
+		line-height: 38px;
+		margin-bottom: 80px;
+		letter-spacing: -0.4px;
+		color: var(--bs-white);
+	}
+	.authorbox_block .author_name {
+		font-size: 20px;
+		color: var(--bs-white);
+	}
+	.authorbox_block .author_designation {
+		color: #E1E1E1;
+		font-size: 16px;
+	}
+}
+// Review Block Layout 3 - End
+
+// Review Block Layout 4 - Start
+.review_block_4 {
+	border-radius: 10px;
+	padding: 50px 30px 42px;
+	background-color: var(--bs-white);
+	box-shadow: 0 4px 10px 0 rgba(0, 61, 43, 0.10);
+	.authorbox_block {
+		margin-bottom: 30px;
+	}
+	.review_comment {
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 0;
+		letter-spacing: -0.2px;
+		color: var(--bs-heading-color);
+	}
+}
+
+.review_updown_style {
+	padding-top: 60px;
+	> div {
+		&:first-child {
+			margin-top: -60px;
+		}
+	}
+}
+
+.review_marquee_vertical_up,
+.review_marquee_vertical_bottom {
+	height: 670px;
+	position: relative;
+	&:before,
+	&:after {
+		left: 0;
+		right: 0;
+		z-index: 2;
+		content: '';
+		height: 100px;
+		position: absolute;
+	}
+	&:before {
+		top: 0;
+		background-image: linear-gradient(0deg, transparent, var(--bs-white));
+	}
+	&:after {
+		bottom: 0;
+		background-image: linear-gradient(0deg, var(--bs-white), transparent);
+	}
+	.swiper-wrapper {
+		pointer-events: none;
+		transition-timing-function: linear;
+	}
+	.swiper-slide {
+		padding: 15px;
+	}
+}
+
+.bg-primary {
+	.review_marquee_vertical_up,
+	.review_marquee_vertical_bottom {
+		&:before {
+			background-image: linear-gradient(0deg, transparent, var(--bs-primary));
+		}
+		&:after {
+			background-image: linear-gradient(0deg, var(--bs-primary), transparent);
+		}
+	}
+}
+.review_section {
+	.rating_block .rating_counter {
+		color: var(--bs-white);
+	}
+}
+// Review Block Layout 4 - End
+/* 4.08 - Review - End
+================================================== */

@@ -1,0 +1,286 @@
+/* About Section - Start
+================================================== */
+
+// Home - Investment Solution - Start
+// About Section
+.about_section {
+	.shape_lines_flow_1 {
+		top: 50px;
+		right: -190px;
+	}
+	.shape_lines_flow_2 {
+		top: -174px;
+		left: -390px;
+	}
+	.shape_dollar_1 {
+		top: 60%;
+		right: 30px;
+		max-width: 64px;
+	}
+	.shape_dollar_2 {
+		left: 80px;
+		bottom: 90px;
+		max-width: 60px;
+	}
+	.shape_nate_1 {
+		top: 24%;
+		left: -30px;
+		opacity: 0.5;
+	}
+	.shape_nate_2 {
+		top: 20%;
+		opacity: 0.5;
+		right: -250px;
+	}
+}
+
+.about_image {
+	position: relative;
+	.mac_image {
+		z-index: 1;
+		max-width: 636px;
+		position: relative;
+		margin: auto auto -220px;
+	}
+	.chart_image {
+		z-index: 1;
+		top: 210px;
+		right: 15px;
+		max-width: 192px;
+		position: absolute;
+	}
+	.shape_dollar_1 {
+		top: 170px;
+		left: 140px;
+		max-width: 60px;
+	}
+}
+// Home - Investment Solution - End
+
+// Home - Online Banking - Start
+.about_image_2 {
+	gap: 20px;
+	>li {
+		max-width: 190px;
+	}
+	.image_block {
+		overflow: hidden;
+		border-radius: var(--bs-border-radius-lg);
+	}
+	.avatars_group {
+		margin-top: 20px;
+	}
+}
+
+.integrated_wrapper {
+	display: flex;
+	padding: 24px 0;
+	flex-direction: column;
+	img {
+		max-width: 68px;
+	}
+	>ul {
+		gap: 22px;
+		li {
+			gap: 22px;
+			align-items: center;
+			display: inline-flex;
+		}
+
+		&:first-child {
+			>li {
+				align-items: flex-start;
+				img {
+					margin-top: -24px;
+				}
+			}
+		}
+		&:last-child {
+			>li {
+				align-items: flex-end;
+				img {
+					margin-bottom: -24px;
+				}
+			}
+		}
+	}
+
+	.site_logo {
+		margin: 22px 0;
+		.site_link {
+			padding: 28px 90px;
+			border-radius: 10px;
+			background-color: var(--bs-dark);
+			border: 1px solid var(--bs-primary);
+		}
+		img {
+			max-width: 132px;
+		}
+	}
+}
+
+.appstore_section {
+	padding: 70px 0 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	.btns_group {
+		gap: 20px;
+	}
+}
+// Home - Online Banking - End
+
+// Home - Payment Solutions - Start
+.ps_contact_process_section {
+	.shape_arrow_1 {
+		top: 140px;
+		right: 190px;
+		max-width: 28px;
+	}
+	.shape_arrow_2 {
+		left: 70px;
+		bottom: 170px;
+		max-width: 28px;
+	}
+	.shape_nate_1 {
+		top: 0;
+		left: -40px;
+	}
+	.shape_nate_2 {
+		right: 0;
+		bottom: 80px;
+		max-width: 470px;
+	}
+}
+
+.contact_process_content {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	.process_line {
+		margin: -30px 0 -105px;
+	}
+	.site_logo {
+		z-index: 1;
+		position: relative;
+		.site_link {
+			padding: 34px 40px;
+			border-radius: 10px;
+			border: 1px solid #8234C5;
+			background-color: var(--bs-dark);
+		}
+		img {
+			max-width: 122px;
+		}
+	}
+}
+
+.contact_process_step {
+	.iconbox_block {
+		padding: 50px 40px;
+		border-radius: 10px;
+		border: 1px solid #8234C5;
+		background-color: var(--bs-dark);
+	}
+	.iconbox_title {
+		font-size: 22px;
+		font-weight: 500;
+		line-height: 32px;
+		font-family: 'SuisseIntl Medium';
+	}
+	.block_number {
+		line-height: 1;
+		font-size: 60px;
+		font-family: 'SuisseIntl SemiBold';
+		background: linear-gradient(to right, var(--bs-primary) 0%, var(--bs-dark) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.ps_pntegrating_section {
+	.shape_nate_1 {
+		top: 32%;
+		right: -240px;
+	}
+	.shape_nate_2 {
+		top: -50px;
+		left: -90px;
+		transform: rotate(55deg);
+	}
+}
+// Home - Payment Solutions - End
+
+// Home - Insurance - Start
+.about_insurance_advice {
+	&.row {
+		margin: -30px -15px;
+		>[class*="col-"] {
+			padding: 30px 15px;
+		}
+	}
+	.iconbox_block {
+		.iconbox_icon {
+			width: auto;
+			height: auto;
+			border-radius: 0;
+			background-color: transparent;
+			img {
+				width: auto;
+				height: 46px;
+			}
+		}
+		.iconbox_title {
+			font-size: 22px;
+			line-height: 32px;
+			margin: 12px 0 4px;
+		}
+	}
+}
+
+.insurance_clients_logo_wrap {
+	padding: 80px 40px;
+	border-radius: 20px;
+	background-color: var(--bs-white);
+	.heading_block {
+		.heading_text {
+			font-size: 32px;
+			line-height: 36px;
+		}
+	}
+	[class*="fa-star"] {
+		color: #08B87F;
+	}
+	.clients_logo {
+		gap: 1px;
+		z-index: 1;
+		position: relative;
+		justify-content: center;
+		&:before {
+			top: 1px;
+			left: 1px;
+			right: 1px;
+			bottom: 1px;
+			content: '';
+			z-index: -1;
+			position: absolute;
+			background-color: var(--bs-border-color);
+		}
+		>li {
+			height: 100px;
+			display: flex;
+			flex: 0 0 auto;
+			align-items: center;
+			width: calc(20% - 1px);
+			justify-content: center;
+			background-color: var(--bs-white);
+		}
+		img {
+			max-width: 160px;
+		}
+	}
+}
+// Home - Insurance - End
+
+/* About Section - End
+================================================== */

@@ -1,0 +1,152 @@
+/* 5.02 - Contact Page - Start
+================================================== */
+.contact_info_box {
+	background-color: var(--bs-white);
+	border-radius: var(--bs-border-radius);
+	.heading_text {
+		line-height: 1;
+		font-size: 24px;
+		margin-bottom: 38px;
+	}
+	.iconlist_block {
+		margin-bottom: 38px;
+		.iconlist_icon img {
+			width: 20px;
+		}
+		.iconlist_text {
+			strong {
+				margin-bottom: 7px;
+			}
+		}
+		a {
+			&:hover {
+				color: var(--bs-dark);
+			}
+		}
+	}
+	hr {
+		margin: 36px 0;
+	}
+	.office_location {
+		gap: 30px;
+	}
+}
+
+.gmap_canvas iframe {
+	width: 100%;
+	height: 600px;
+	display: block;
+}
+
+// Home Insurance - Start
+.insurance_contact_info {
+	padding: 30px;
+	border-radius: 10px;
+	background-color: var(--bs-white);
+	.icon_block {
+		width: 96px;
+		height: 96px;
+		border-radius: 50%;
+		background-color: #003D2B;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+	.heading_block {
+		.heading_text {
+			font-size: 26px;
+			line-height: 32px;
+			margin-bottom: 8px;
+		}
+	}
+	>.row {
+		margin: -5px;
+		>[class*="col-"] {
+			padding: 5px;
+		}
+	}
+	.iconbox_block {
+		padding: 26px;
+		border-radius: 10px;
+		background-color: var(--bs-light);
+		.iconbox_icon {
+			width: auto;
+			height: auto;
+			margin-bottom: 28px;
+			background-color: transparent;
+			img {
+				width: auto;
+				height: 30px;
+			}
+		}
+		.iconbox_title {
+			font-size: 18px;
+			line-height: 22px;
+			color: var(--bs-heading-color);
+		}
+		p {
+			margin-bottom: 26px;
+		}
+		.btn-link {
+			color: var(--bs-heading-color);
+			border-color: transparent;
+			&:hover {
+				.btn_icon {
+					transform: translate(4px, 1px);
+				}
+				
+			}
+			.btn_icon {
+				transform: translateY(1px);
+				transition: .3s;
+			}
+		}
+	}
+}
+
+.insurance_member {
+	z-index: 1;
+	height: 516px;
+	padding: 30px;
+	display: flex;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	border-radius: 10px;
+	align-items: center;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center bottom 140px;
+	&:before {
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: '';
+		height: 60%;
+		z-index: -1;
+		position: absolute;
+		background-image: linear-gradient(0deg, #D9FF43, #003D2B, transparent);
+	}
+	h3 {
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 6px;
+		color: var(--bs-white);
+	}
+	p {
+		font-size: 18px;
+		line-height: 26px;
+		margin-bottom: 26px;
+		color: var(--bs-white);
+	}
+	.btn {
+		width: 100%;
+		padding: 16px 30px;
+	}
+}
+// Home Insurance - End
+/* 5.02 - Contact Page - End
+================================================== */

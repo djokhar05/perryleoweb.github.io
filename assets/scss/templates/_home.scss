@@ -1,0 +1,470 @@
+/* 5.05 - Home Pages - Start
+================================================== */
+
+// Home - Investment Solution - Start
+.investment_solution {
+	--bs-body-bg: var(--bs-dark);
+	--bs-body-color: #C6C6C6;
+	--bs-body-color-rgb: 198, 198, 198;
+	--bs-heading-color: var(--bs-white);
+	--bs-secondary: #023436;
+	--bs-secondary-rgb: 2, 52, 54;
+	.mobile_menu_btn:hover {
+		color: var(--bs-dark);
+	}
+}
+// Home - Investment Solution - End
+
+// Home - Online Banking - Start
+.online_banking {
+	--bs-body-bg: var(--bs-white);
+	--bs-body-color: #656565;
+	--bs-body-color-rgb: 101, 101, 101;
+	--bs-heading-color: #1C1C1E;
+	--bs-light: #F0F0F0;
+	--bs-light-rgb: 240, 240, 240;
+	--bs-dark: #1C1C1E;
+	--bs-dark-rgb: 28, 28, 30;
+	--bs-primary-bg-subtle: rgba(217, 255, 67, 0.1);
+	--bs-dark-bg-subtle: rgba(28, 28, 30, 0.1);
+
+	.btn-outline-light {
+		border-color: rgba(255, 255, 255, 0.20);
+	}
+}
+// Home - Online Banking - End
+
+// Home - Payment Solutions - Start
+.payment_solutions {
+	--bs-body-bg: #150132;
+	--bs-body-color: #DBDBDB;
+	--bs-body-color-rgb: 219, 219, 219;
+	--bs-heading-color: var(--bs-white);
+	--bs-dark: #060210;
+	--bs-dark-rgb: 6, 2, 16;
+	--bs-primary-bg-subtle: rgba(217, 255, 67, 0.10);
+	--bs-secondary: #150132;
+	--bs-secondary-rgb: 21, 1, 50;
+
+	.mobile_menu_btn {
+		border-radius: 100%;
+		&:hover {
+			color: var(--bs-dark);
+			background-color: var(--bs-primary);
+		}
+	}
+}
+// Home - Payment Solutions - End
+
+// Home - Financial Consulting - Start
+.financial_consulting {
+	--bs-body-color: #615959;
+	--bs-body-color-rgb: 97, 89, 89;
+	--bs-heading-color: #020202;
+	--bs-primary: #FF6100;
+	--bs-dark: #020202;
+	--bs-dark-rgb: 2, 2, 2;
+	--bs-primary-rgb: 255, 97, 0;
+	--bs-secondary: #242628;
+	--bs-secondary-rgb: 36, 38, 40;
+	--bs-border-color: #E6EBEB;
+	--bs-light: #E6EBEB;
+	--bs-light-rgb: 230, 235, 235;
+
+	.container-fluid {
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+
+	.btn.bg-primary {
+		color: var(--bs-white);
+		svg path {
+			transition: .3s;
+		}
+		&:hover {
+			color: var(--bs-dark);
+			svg path {
+				fill: var(--bs-dark);
+			}
+		}
+		&:before {
+			background-color: var(--bs-light);
+		}
+	}	
+	.btn.bg-dark {
+		svg path {
+			transition: .3s;
+		}
+		&:hover {
+			svg path {
+				fill: var(--bs-dark);
+			}
+		}
+	}
+
+	.heading_block.text-white {
+		.heading_description {
+			color: #D8D8D8;
+		}
+	}
+}
+
+.fc_decoration_wrap {
+	margin: auto;
+	max-width: 1780px;
+	border-radius: 20px;
+	[class*="decoration_item shape_"] {
+		opacity: 0.7;
+	}
+	.shape_coin {
+		top: 147px;
+		left: 15px;
+	}
+	.shape_note_1 {
+		top: 221px;
+		right: 24px;
+	}
+	.shape_note_2 {
+		right: 47px;
+		bottom: 87px;
+	}
+	.shape_percent {
+		left: 36px;
+		bottom: 44px;
+	}
+	.shape_nate_1 {
+		left: 0;
+		top: 40%;
+	}
+	.shape_nate_2 {
+		top: 42%;
+		right: -50px;
+	}
+
+	.shape_coin_2 {
+		top: 50%;
+		left: 49px;
+	}
+	.shape_note_3 {
+		top: 51%;
+		right: -35px;
+	}
+	.shape_nate_3 {
+		top: 0;
+		right: 0;
+	}
+	.shape_nate_4 {
+		left: 0;
+		bottom: 0;
+	}
+	.shape_nate_5 {
+		right: 0;
+		bottom: 0;
+	}
+	.shape_nate_6 {
+		top: 0;
+		left: 0;
+	}
+}
+.fc_social_icons_block {
+	li {
+		a {
+			svg path {
+				transition: .3s;
+			}
+			&::before {
+				background: var(--bs-primary);
+			}
+			&:hover {
+				color: var(--bs-white);
+				svg path {
+					fill: var(--bs-white);
+				}
+			}
+		}
+	}
+}
+// Home - Financial Consulting - End
+
+// Home - Index Insurance - Start
+.index_insurance {
+	--bs-heading-color: #003D2B;
+	--bs-dark: #003D2B;
+	--bs-dark-rgb: 0, 61, 43;
+	--bs-secondary: #00D999;
+	--bs-secondary-rgb: 0, 217, 153;
+	--bs-primary-bg-subtle: rgba(217, 255, 67, 0.10);
+	--bs-light: #F3F3F3;
+	--bs-light-rgb: 243, 243, 243;
+	--bs-border-color: #D9D9D9;
+	.container-fluid {
+		max-width: 1730px;
+	}
+	.btn.bg-dark {
+		&:before {
+			background-color: #00D999;
+		}
+	}
+}
+
+.insurance_decoration_wrap {
+	.shape_star_1 {
+		top: 400px;
+		left: 70px;
+		width: 30px;
+	}
+	.shape_star_2 {
+		top: 120px;
+		right: 130px;
+		width: 30px;
+	}
+	.shape_star_3 {
+		top: 70%;
+		right: 100px;
+		width: 30px;
+	}
+	.shape_star_4 {
+		top: 80%;
+		left: 40px;
+		width: 30px;
+	}
+	.shape_star_5 {
+		top: 45%;
+		right: 140px;
+		width: 30px;
+	}
+	.shape_star_6 {
+		top: 70%;
+		left: 140px;
+		width: 30px;
+	}
+	.shape_star_7 {
+		top: 366px;
+		left: 77px;
+	}
+	.shape_star_8 {
+		top: 38%;
+		right: 77px;
+	}
+	.shape_nate_1 {
+		top: 40%;
+		right: -200px;
+	}
+	.shape_nate_2 {
+		top: 0;
+		left: 0;
+	}
+	.shape_nate_3 {
+		right: 0;
+		bottom: 0;
+	}
+	.shape_nate_4 {
+		left: 0;
+		top: 40%;
+	}
+	.shape_nate_5 {
+		top: 0;
+		right: 0;
+	}
+	.shape_nate_6 {
+		right: 0;
+		bottom: 0;
+	}
+	.shape_pattern_1 {
+		left: 0;
+		bottom: 0;
+	}
+	.shape_pattern_2 {
+		right: 0;
+		bottom: 0;
+	}
+	.shape_pattern_3 {
+		top: 0;
+		right: 0;
+	}
+
+	.service_section {
+		padding-bottom: 450px;
+	}
+}
+// Home - Index Insurance - End
+
+// Home - Car Insurance - Start
+.car_insurance {
+	--bs-body-color: #66676A;
+	--bs-body-color-rgb: 102, 103, 106;
+	--bs-heading-color: #01040D;
+	--bs-dark: #01040D;
+	--bs-dark-rgb: 1, 4, 13;
+	--bs-secondary: #7BDAF8;
+	--bs-secondary-rgb: 123, 218, 248;
+	--bs-light: #F3F3F3;
+	--bs-light-rgb: 243, 243, 243;
+	--bs-border-color: #E1E9EC;
+	--bs-primary: #2047F4;
+	--bs-primary-rgb: 32, 71, 244;
+	--bs-gradient: linear-gradient(180deg, transparent 50%, #FFFFFF 0%);
+
+	.btn.bg-dark {
+		&:before {
+			background-color: var(--bs-primary);
+		}
+	}
+
+	.btn.bg-white {
+		&:before {
+			background-color: var(--bs-secondary);
+		}
+	}
+
+	.btn.border-secondary {
+		&:before {
+			background-color: var(--bs-secondary);
+		}
+	}
+}
+
+.car_insurance_feature_section {
+	--bs-gradient: linear-gradient(180deg, transparent 69.2%, var(--bs-light) 0%);
+	.shape_car_path_1 {
+		top: 0;
+		left: 0;
+		max-width: 156px;
+	}
+	.shape_car_path_2 {
+		right: 0;
+		top: 74px;
+		max-width: 156px;
+	}
+}
+
+.car_insurance_cta_section {
+	--bs-gradient: linear-gradient(180deg, var(--bs-light) 43%, transparent 0%);
+	.shape_star_1 {
+		top: -260px;
+		left: -60px;
+	}
+	.shape_star_2 {
+		right: 0;
+		top: -350px;
+	}
+}
+
+.car_insurance_cta {
+	border-radius: 10px;
+	padding: 44px  50px 50px;
+	background-color: var(--bs-white);
+	box-shadow: 0 3px 15px 0 rgba(12, 1, 13, 0.03);
+	.heading_text {
+		font-size: 32px;
+		line-height: 36px;
+		margin-bottom: 12px;
+	}
+	p {
+		color: #66676A;
+		font-size: 20px;
+		line-height: 28px;
+		margin-bottom: 33px;
+	}
+	.image_block {
+		border-radius: 10px;
+	}
+	.image_wrapper {
+		display: flex;
+		margin-top: 40px;
+		align-items: center;
+	}
+	.btn {
+		padding: 21px 40px;
+	}
+	.pricing_list {
+		gap: 10px;
+		z-index: 1;
+		width: 230px;
+		flex: 0 0 auto;
+		position: relative;
+		margin-left: -120px;
+		>li {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 12px 10px;
+			border-radius: 10px;
+			align-items: center;
+			justify-content: space-between;
+			background-color: var(--bs-white);
+			border: 1px solid var(--bs-border-color);
+			box-shadow: 0 4px 4px 0 rgba(1, 4, 13, 0.1);
+		}
+		.logo_image {
+			flex: 0 0 auto;
+			max-width: 100px;
+		}
+		.pricing_value {
+			gap: 2px;
+			display: flex;
+			padding: 0 10px;
+			border-radius: 50px;
+			align-items: center;
+			color: var(--bs-heading-color);
+			background-color: var(--bs-secondary);
+			sup, sub {
+				color: #484848;
+				font-size: 12px;
+				font-weight: 500;
+			}
+			sup {
+				top: -2px;
+			}
+			sub {
+				bottom: -2px;
+			}
+			strong {
+				font-size: 20px;
+				font-weight: 700;
+			}
+		}
+	}
+
+	.icon_block {
+		width: 90px;
+		height: 90px;
+		border-radius: 10px;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		box-shadow: 0 3px 14px 0 rgba(12, 1, 13, 0.2);
+		img {
+			max-width: 38px;
+		}
+	}
+	.avatar_image {
+		width: 100px;
+		height: 100px;
+		overflow: hidden;
+		border-radius: 100%;
+		border: 2px solid var(--bs-white);
+		box-shadow: 0 4px 10px 0 rgba(12, 1, 13, 0.2);
+	}
+
+	.image_wrapper_2 {
+		padding: 0 49px;
+		margin-top: 40px;
+		position: relative;
+		.icon_block {
+			top: 76px;
+			left: 4px;
+			z-index: 1;
+			position: absolute;
+			background-color: var(--bs-white);
+		}
+		.avatar_image {
+			right: 0;
+			bottom: 56px;
+			position: absolute;
+		}
+	}
+}
+// Home - Car Insurance - End
+
+/* 5.05 - Home Pages - End
+================================================== */

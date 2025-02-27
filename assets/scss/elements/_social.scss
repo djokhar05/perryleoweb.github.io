@@ -1,0 +1,117 @@
+/* 2.11 - Social Icons - Start
+================================================== */
+.social_icons_block {
+	gap: 4px;
+	a {
+		z-index: 1;
+		width: 42px;
+		height: 42px;
+		display: flex;
+		flex: 0 0 auto;
+		position: relative;
+		border-radius: 100%;
+		align-items: center;
+		color: var(--bs-white);
+		justify-content: center;
+		background: var(--bs-dark);
+		&:before {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			z-index: -1;
+			content: '';
+			position: absolute;
+			transform: scale(0.8);
+			border-radius: inherit;
+			transition: var(--bs-transition);
+			background: linear-gradient(0deg, #00F1B5, #D9FF43);
+		}
+		svg {
+			width: 17px;
+			path {
+				fill: var(--bs-white);
+				transition: var(--bs-transition);
+			}
+		}
+		&:hover {
+			color: var(--bs-dark);
+			&:before {
+				opacity: 1;
+				transform: scale(1);
+			}
+			svg path {
+				fill: var(--bs-dark);
+			}
+		}
+	}
+}
+.ins_social_links {
+	li {
+		a {
+			&:hover {
+				color: var(--bs-white) !important;
+			}
+			&::before {
+				background: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important;
+			}
+		}
+	}
+}
+.ins_social_footer {
+	li {
+		a {
+			&:hover {
+				color: var(--bs-dark) !important;
+			}
+			&::before {
+				background: var(--bs-primary);
+			}
+		}
+	}
+}
+.social_links_block {
+	gap: 6px;
+	a {
+		display: flex;
+		line-height: 1;
+		font-size: 14px;
+		font-weight: 500;
+		align-items: center;
+		border-radius: 50px;
+		color: var(--bs-dark);
+		padding: 12px 18px 11px;
+		justify-content: center;
+		text-transform: uppercase;
+		background-color: var(--bs-light);
+		&:hover {
+			transform: translateY(-3px);
+		}
+		&:hover {
+			color: var(--bs-dark);
+			background-color: var(--bs-primary);
+		}
+	}
+
+	.facebook {
+		a {
+			color: var(--bs-white);
+			background-color: #1877f2;
+		}
+	}
+	.twitter {
+		a {
+			color: var(--bs-white);
+			background-color: #000000;
+		}
+	}
+	.linkdin {
+		a {
+			color: var(--bs-white);
+			background-color: #0a66c2;
+		}
+	}
+}
+/* 2.11 - Social Icons - End
+================================================== */

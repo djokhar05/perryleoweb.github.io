@@ -1,0 +1,418 @@
+/* Hero Sections - Start
+================================================== */
+
+// Global Hero Section - Start
+.hero_section {
+	h1 {
+		font-size: 80px;
+		line-height: 90px;
+	}
+	p {
+		font-size: 22px;
+		font-weight: 500;
+		line-height: 34px;
+	}
+}
+// Global Hero Section - End
+
+// Hero Investment Solution - Start
+.hero_investment_solution {
+	padding: 144px 0 0;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	h1 {
+		line-height: 100px;
+		span {
+			--bs-heading-color: var(--bs-dark);
+			line-height: 1;
+			padding: 0 10px;
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			color: var(--bs-heading-color);
+			border-radius: var(--bs-border-radius-sm);
+			background: linear-gradient(90deg, #00F1B5, #D9FF43);
+		}
+	}
+
+	.hero_image {
+		width: 600px;
+		float: right;
+		position: relative;
+		margin-right: -150px;
+	}
+
+	.shape_dollar_1 {
+		left: 0;
+		top: 10px;
+		max-width: 65px;
+	}
+	.shape_dollar_2 {
+		top: 160px;
+		left: 140px;
+		max-width: 32px;
+		filter: blur(2px);
+	}
+	.shape_dollar_3 {
+		top: 44%;
+		left: -140px;
+		max-width: 61px;
+	}
+	.shape_dollar_4 {
+		left: -50px;
+		bottom: 60px;
+		max-width: 32px;
+		filter: blur(2px);
+	}
+	.shape_dollar_5 {
+		top: 40px;
+		right: -100px;
+		max-width: 61px;
+	}
+	.shape_dollar_6 {
+		right: 0;
+		top: 200px;
+		max-width: 60px;
+		filter: blur(2px);
+	}
+	.shape_dollar_7 {
+		top: 42%;
+		right: -80px;
+		max-width: 64px;
+	}
+	.shape_dollar_8 {
+		top: 220px;
+		left: 36px;
+		max-width: 68px;
+	}
+	.shape_dollar_9 {
+		top: 70%;
+		left: 40px;
+		max-width: 61px;
+	}
+	.shape_nate {
+		left: -210px;
+		bottom: -250px;
+		max-width: 414px;
+	}
+	.shape_pattern {
+		right: 0;
+		bottom: 0;
+		max-width: 307px;
+	}
+	.rating_block .rating_counter {
+		font-size: 20px;
+		color: #C6C6C6;
+		text-transform: capitalize;
+	}
+}
+// Hero Investment Solution - End
+
+// Hero Online Banking - Start
+.hero_online_banking {
+	padding: 208px 0 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	.overlay {
+		opacity: 0.02;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.hero_title {
+		margin: 24px 0 22px;
+	}
+	p {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 32px;
+	}
+	.hero_shape_image {
+		z-index: -1;
+		display: block;
+		margin-top: -75px;
+		position: relative;
+		img {
+			width: 100%;
+		}
+	}
+	.hero_hand_image {
+		right: 0;
+		bottom: 184px;
+		max-width: 910px;
+		position: absolute;
+	}
+	.ob_hero_img {
+		position: absolute;
+		right: 339px;
+		bottom: 34%;
+		img {
+			animation: updown 2s infinite linear;
+  			-webkit-animation: updown 2s infinite linear;
+		}
+	}
+	.clients_logo_carousel {
+		margin-top: -16px;
+		margin-bottom: 60px;
+		.badge {
+			margin-bottom: 50px;
+		}
+	}
+	.icon_star_1 {
+		top: 198px;
+		right: 94px;
+		animation: spin 6s linear infinite;
+	}
+	.icon_star_2 {
+		top: 48%;
+		left: 70px;
+		animation: spin 4s linear infinite;
+	}
+	[class*="shape_shadow_"] {
+		img {
+			opacity: 0.6;
+			filter: blur(150px);
+		}
+	}
+	.shape_shadow_1 {
+		top: -77px;
+		left: -272px;
+		max-width: 334px;
+	}
+	.shape_shadow_2 {
+		left: -207px;
+		bottom: -76px;
+		max-width: 334px;
+	}
+	.shape_shadow_3 {
+		top: 210px;
+		right: -255px;
+		max-width: 334px;
+	}
+	.shape_shadow_4 {
+		right: 35%;
+		bottom: 197px;
+		max-width: 218px;
+	}
+}
+@-webkit-keyframes updown {
+	0% {
+		transform: translateY(-15px);
+		-webkit-transform: translateY(-15px);
+	  	-moz-transform: translateY(-15px);
+	  	-ms-transform: translateY(-15px);
+	  	-o-transform: translateY(-15px);
+	}
+	50% {
+		transform: translateY(-5px);
+		-webkit-transform: translateY(-5px);
+	  	-moz-transform: translateY(-5px);
+	  	-ms-transform: translateY(-5px);
+	  	-o-transform: translateY(-5px);
+	}
+	100% {
+		transform: translateY(-15px);
+		-webkit-transform: translateY(-15px);
+	  	-moz-transform: translateY(-15px);
+	  	-ms-transform: translateY(-15px);
+	  	-o-transform: translateY(-15px);
+	} 
+}
+// Hero Online Banking - End
+
+// Hero Payment Solutions - Start
+.hero_payment_solutions {
+	padding: 140px 0 0;
+	border-radius: 0 0 30px 30px;
+	background-image: linear-gradient(120deg, #8234C5, #230952);
+	.hero_title {
+		font-size: 75px;
+		line-height: 95px;
+		margin: 20px 0 60px;
+	}
+	.container-fluid {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	p {
+		font-size: 20px;
+		line-height: 32px;
+		margin-bottom: 50px;
+	}
+	.btns_group {
+		gap: 50px;
+	}
+	.funfact_block .funfact_title {
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.shape_pattern_1 {
+		left: 0;
+		bottom: 0;
+	}
+	.shape_pattern_2 {
+		right: 0;
+		bottom: 0;
+	}
+	.shape_nate_1 {
+		top: -32%;
+		left: -8%;
+		max-width: 500px;
+	}
+	.shape_nate_2 {
+		top: -12%;
+		right: -18%;
+		max-width: 640px;
+	}
+}
+// Hero Payment Solutions - End
+
+// Hero Financial Consulting - Start
+.hero_financial_consulting {
+	border-radius: 30px;
+	background-size: cover;
+	padding: 60px 70px 80px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	p {
+		color: #E1E1E1;
+		font-size: 22px;
+		line-height: 34px;
+		margin-bottom: 40px;
+	}
+	.image_block {
+		margin-top: 70px;
+		border-radius: 30px;
+	}
+}
+// Hero Financial Consulting - End
+
+// Hero Insurance - Start
+.hero_insurance {
+	padding: 170px 0 74px;
+	.hero_title {
+		margin: 24px 0 15px;
+	}
+	h1 {
+		font-size: 70px;
+		line-height: 80px;
+	}
+	p {
+		color: #ABABAB;
+		font-size: 20px;
+		max-width: 543px;
+		line-height: 32px;
+		margin-bottom: 41px;
+	}
+	.hero_image {
+		margin: auto -190px auto auto;
+	}
+	.btns_group {
+		padding-bottom: 70px;
+	}
+	.iconbox_block {
+		.iconbox_icon {
+			width: auto;
+			height: auto;
+			border-radius: 0;
+			background-color: transparent;
+			img {
+				width: 38px;
+			}
+		}
+		.iconbox_title {
+			line-height: 1;
+			font-size: 22px;
+			margin: 20px 0 12px;
+		}
+		p {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+	.shape_pattern_1 {
+		left: 0;
+		bottom: 0;
+	}
+	.shape_pattern_2 {
+		top: 0;
+		right: 0;
+	}
+	.shape_nate_28 {
+		top: 0;
+		left: 0;
+	}
+	.shape_nate_29 {
+		right: 0;
+		bottom: 0;
+	}
+	.rating_block .rating_counter {
+		color: #ABABAB;
+	}
+}
+.hero_title mark {
+	color: currentColor;
+	position: relative;
+	padding: 0 10px;
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: "";
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 10px;
+	}
+}
+// Hero Insurance - End
+
+// Hero Car Insurance - Start
+.hero_car_insurance {
+	padding: 80px 0 100px;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: right 33.2% top;
+	.hero_title {
+		font-size: 60px;
+		line-height: 70px;
+		margin-bottom: 16px;
+	}
+	p {
+		font-size: 24px;
+		margin: 0 0 41px;
+		color: var(--bs-white);
+	}
+	.rating_block {
+		margin: 72px 0 30px;
+		[class*="fa-star"] {
+			color: #D9FF43;
+		}
+	}
+	.clients_logo {
+		gap: 30px 50px;
+		img {
+			max-height: 40px;
+		}
+	}
+
+	.shape_nate_1 {
+		left: 0;
+		top: 60px;
+	}
+	.shape_nate_2 {
+		top: 60px;
+		right: -240px;
+	}
+	.hero_car {
+		position: absolute;
+		bottom: 12%;
+		right: 44.7%;
+	}
+}
+// Hero Car Insurance - End
+
+/* Hero Sections - End
+================================================== */

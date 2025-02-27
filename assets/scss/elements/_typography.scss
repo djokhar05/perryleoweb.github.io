@@ -1,0 +1,52 @@
+/* 2.06 - Typography - Start
+================================================== */
+.heading_block {
+	margin-bottom: 40px;
+	.heading_text {
+		font-size: 50px;
+		font-weight: 600;
+		line-height: 60px;
+		margin-bottom: 24px;
+		letter-spacing: -0.5px;
+	}
+	.subtitle_text {
+		line-height: 1;
+		font-size: 18px;
+		font-weight: 700;
+		&.border-bottom {
+			padding-bottom: 10px;
+			display: inline-block;
+		}
+	}
+	.heading_description {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 32px;
+		letter-spacing: -0.2px;
+	}
+	.badge {
+		margin-bottom: 19px;
+	}
+}
+
+.heading_block.style_2 {
+	.heading_text {
+		font-size: 55px;
+		line-height: 67px;
+	}
+	.heading_description {
+		font-size: 18px;
+		line-height: 28px;
+	}
+}
+
+.heading_block.text-white {
+	.heading_text {
+		color: var(--bs-white);
+	}
+}
+.bg-ins-subtle {
+	background-color: rgba(0, 61, 43, 0.1);
+}
+/* 2.06 - Typography - End
+================================================== */

@@ -1,0 +1,127 @@
+/* 2.14 - Accordion - Start
+================================================== */
+.faq_man_image {
+
+	.shape_dollar_1 {
+		top: 330px;
+		right: 100px;
+		max-width: 60px;
+		filter: blur(2px);
+	}
+	.chart_image {
+		top: 100px;
+		left: -50px;
+		max-width: 192px;
+		position: absolute;
+	}
+}
+
+.faq_section {
+	.shape_nate_1 {
+		top: -330px;
+		left: -330px;
+	}
+	.shape_nate_2 {
+		right: -250px;
+		bottom: -260px;
+	}
+}
+
+.accordion-item {
+	border: none;
+	padding: 0 0 23px;
+	border-radius: 0 !important;
+	background-color: transparent;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	&:not(:last-child) {
+		margin-bottom: 40px;
+	}
+	.accordion-body {
+		padding: 14px 0 0;
+	}
+	.accordion-button {
+		padding: 0;
+		font-size: 22px;
+		line-height: 30px;
+		color: var(--bs-white);
+		font-family: 'SuisseIntl Medium';
+	}
+	.accordion-button,
+	.accordion-button:not(.collapsed) {
+		box-shadow: none;
+		background-color: transparent;
+	}
+	.accordion-button::after {
+		width: auto;
+		height: auto;
+		content: "\f107";
+		font-weight: 400;
+		background: none;
+		font-family: 'Font Awesome 5 pro';
+	}
+}
+
+.accordion.style_2 {
+	.accordion-item {
+		margin: 0;
+		padding: 40px 30px;
+		border-radius: 10px;
+		border-color: #D9D9D9;
+		&:has([aria-expanded="true"]) {
+			border-radius: 10px !important;
+			background-color: var(--bs-white);
+			box-shadow: 0 4px 10px 0 rgba(0, 61, 43, 0.10);
+		}
+	}
+	.accordion-item .accordion-button {
+		padding: 0;
+		font-size: 24px;
+		color: var(--bs-heading-color);
+	}
+	.accordion-item .accordion-button::after {
+		width: 50px;
+		height: 50px;
+		border-radius: 100%;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		border: 1px solid #D9D9D9;
+	}
+	.accordion-item .accordion-body {
+		font-size: 18px;
+		padding-right: 50px;
+	}
+}
+
+// Home - Payment Solutions - Start
+.payment_solutions {
+	.accordion-item {
+		padding: 30px 30px 34px;
+		.icon {
+			max-width: 28px;
+			margin-right: 20px;
+		}
+	}
+	.accordion-item:not(:last-child) {
+		margin-bottom: 0px;
+	}
+	.accordion-item:has([aria-expanded=true]) {
+		background-color: var(--bs-secondary);
+	}
+}
+
+.powering_industry_section {
+	.shape_nate_1 {
+		left: 0;
+		top: 24%;
+		max-width: 470px;
+	}
+	.shape_arrow_1 {
+		top: 200px;
+		right: 75px;
+		max-width: 22px;
+	}
+}
+// Home - Payment Solutions - End
+/* 2.14 - Accordion - End
+================================================== */

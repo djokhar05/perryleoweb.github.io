@@ -1,0 +1,127 @@
+/* Career Page - Start
+================================================== */
+.career_block {
+	display: flex;
+	position: relative;
+	align-items: center;
+	padding: 35px 50px 40px;
+	justify-content: space-between;
+	transition: var(--bs-transition);
+	background-color: var(--bs-white);
+	border-radius: var(--bs-border-radius);
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	.block_title {
+		font-size: 26px;
+		margin-bottom: 20px;
+	}
+	.iconlist_block {
+		gap: 20px;
+		> li {
+			gap: 6px;
+			line-height: 1;
+			font-size: 18px;
+		}
+	}
+	.btn {
+		padding: 15px 30px;
+		background-color: transparent;
+		border: 1px solid var(--bs-border-color);
+		&:before {
+			background: linear-gradient(45deg, #00F1B5, #D9FF43);
+		}
+	}
+
+	&:hover {
+		z-index: 1;
+		transform: translateY(-2px);
+		box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.1);
+	}
+}
+
+.job_apply_form {
+	padding: 71px 80px 80px;
+	border-radius: var(--bs-border-radius);
+	border: 1px solid var(--bs-border-color);
+	.heading_block .heading_text {
+		font-size: 34px;
+		line-height: 44px;
+		margin-bottom: 10px;
+	}
+	.heading_block .heading_description {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.btn[type=submit] {
+		padding: 21px 40px;
+		background: linear-gradient(45deg, #00F1B5, #D9FF43);
+		&:before {
+			background-color: var(--bs-primary);
+		}
+	}
+}
+
+// Home - Financial Consulting - Start
+.fc_career_box {
+	padding: 30px;
+	margin: 30px 0;
+	.focus_title {
+		gap: 10px;
+		display: flex;
+		font-size: 14px;
+		font-weight: 500;
+		align-items: center;
+		margin-bottom: 20px;
+		img {
+			max-width: 18px;
+		}
+	}
+	.title_text {
+		font-size: 22px;
+		max-width: 325px;
+		line-height: 28px;
+		margin-bottom: 30px;
+	}
+	p {
+		color: #E1E1E1;
+		font-size: 18px;
+		line-height: 26px;
+		margin-bottom: 30px;
+	}
+	.row:has(.form-group) {
+		margin: -10px;
+		>[class*="col-"] {
+			padding: 10px;
+		}
+	}
+	.form-group:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	.form-group .form-control,
+	.form-group .form-select {
+		font-weight: 500;
+		color: var(--bs-white);
+		caret-color: var(--bs-white);
+		border-color: var(--bs-black);
+		background-color: var(--bs-black);
+		&:focus {
+			border-color: var(--bs-primary);
+		}
+		&::placeholder {
+			color: rgba(255, 255, 255, 0.5);
+		}
+		&:-ms-input-placeholder {
+			color: rgba(255, 255, 255, 0.5);
+		}
+		&::-ms-input-placeholder {
+			color: rgba(255, 255, 255, 0.5);
+		}
+	}
+	.form-group textarea.form-control {
+		min-height: 141px;
+	}
+}
+// Home - Financial Consulting - Start
+/* Career Page - End
+================================================== */
