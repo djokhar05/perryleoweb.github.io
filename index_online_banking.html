@@ -35,6 +35,9 @@
     <!-- Custom - CSS Include -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <!-- currencies converter form actions -->
+    <script src="assets/js/currency-converter.js"></script>
+
   </head>
 
 
@@ -202,14 +205,41 @@
             </div>
           </div>
           <div class="hero_shape_image">
-            <img src="assets/images/hero/hero_shape_1.svg" alt="Hero Shape">
+           
+            <!-- <img src="assets/images/hero/hero_shape_1.svg" alt="Hero Shape"> -->
           </div>
           <div class="hero_hand_image wow fadeInRight" data-wow-delay=".2s">
-            <img src="assets/images/hero/hero_hand_image.png" alt="Hand Image">
+            <!-- <img src="assets/images/hero/hero_hand_image.png" alt="Hand Image"> -->
           </div>
           <div class="ob_hero_img">
             <div class="wow fadeInRight" data-wow-delay=".2s"> 
-              <img src="assets/images/hero/card.png" alt="">
+               <!-- my cureency converter -->
+            <div class="currency-converter">
+              <h3>Currency Converter</h3>
+              <form id="converter-form">
+                  <label for="fromCurrency">From:</label>
+                  <div class="custom-dropdown">
+                      <button id="fromButton" class="dropdown-btn">Select Currency</button>
+                      <div id="fromDropdown" class="dropdown-content"></div>
+                  </div>
+          
+                  <label for="amount">Amount:</label>
+                  <input type="number" id="amount" placeholder="Enter amount" required>
+          
+                  <label for="toCurrency">To:</label>
+                  <div class="custom-dropdown">
+                      <button id="toButton" class="dropdown-btn">Select Currency</button>
+                      <div id="toDropdown" class="dropdown-content"></div>
+                  </div>
+          
+                  <button type="button" onclick="convertCurrency()">Convert</button>
+              </form>
+          
+              <div id="result"></div>
+          </div>
+          
+          <!-- my cureency converter end -->
+              <!-- <img src="assets/images/hero/card.png" alt=""> -->
             </div>
           </div>
           <div class="container">
