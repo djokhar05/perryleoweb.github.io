@@ -2708,7 +2708,7 @@ input[type=search]::-webkit-search-results-decoration {
       animation: updown 2s infinite linear;
       -webkit-animation: updown 2s infinite linear; }
   .hero_online_banking .clients_logo_carousel {
-    margin-top: -16px;
+    margin-top: 160px;
     margin-bottom: 60px; }
     .hero_online_banking .clients_logo_carousel .badge {
       margin-bottom: 50px; }
