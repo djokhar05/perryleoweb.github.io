@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="thumbnail" content="assets/images/synox_page_thumbnail.webp">
-    <meta name="description" content="Synox – Finance & Consulting Site Template.">
+    <meta name="description" content="PerryLeo – Finance & Consulting Site Template.">
     <meta name="keywords" content="Finance & Consulting Bootstrap Site Template">
     <meta name="author" content="XpressBuddy">
 
-    <title>Online Banking – Synox – Finance & Consulting Site Template.</title>
+    <title>Online Banking – PerryLeo – Finance & Consulting Site Template.</title>
     <link rel="shortcut icon" href="assets/images/site_logo/favourite_icon.webp">
 
     <!-- Fraimwork - CSS Include -->
@@ -63,8 +63,8 @@
               <div class="col-lg-3 col-5">
                 <div class="site_logo">
                   <a class="site_link" href="index.html">
-                    <img src="assets/images/site_logo/site_logo_white.svg" alt="Site Logo White">
-                    <img src="assets/images/site_logo/site_logo_black.svg" alt="Site Logo Black">
+                    <img src="assets/images/site_logo/site_logo_white.png" alt="Site Logo White">
+                    <img src="assets/images/site_logo/site_logo_black.png" alt="Site Logo Black">
                   </a>
                 </div>
               </div>
@@ -170,7 +170,7 @@
           <div class="container">
             <div class="row align-items-center">
               <div class="col-lg-7">
-                <div class="badge text-uppercase text-primary bg-primary-subtle wow fadeInUp" data-wow-delay=".1s">Fast, secure, and hassle-free money transfers</div>
+                <div class="badge text-uppercase text-primary bg-primary-subtle wow fadeInUp" data-wow-delay=".1s">Fast, secure,</div>
                 <h1 class="hero_title text-white wow fadeInUp" data-wow-delay=".2s">
                   Seamless 
                   <span>Global</span>
@@ -204,7 +204,37 @@
                   </li>
                 </ul>
               </div>
-            </div>
+              <!-- my cureency converter start -->
+              <div class="">
+                <div class="currency-converter">
+                  <h3>Currency Converter</h3>
+                  <form id="converter-form">
+                    <label for="fromCurrency">From:</label>
+                    <div class="custom-dropdown">
+                        <button id="fromButton" class="dropdown-btn">Select Currency</button>
+                        <div id="fromDropdown" class="dropdown-content"></div>
+                    </div>
+            
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" placeholder="Enter amount" required>
+            
+                    <label for="toCurrency">To:</label>
+                    <div class="custom-dropdown">
+                        <button id="toButton" class="dropdown-btn">Select Currency</button>
+                        <div id="toDropdown" class="dropdown-content"></div>
+                    </div>
+            
+                    <button type="button" onclick="convertCurrency()">Convert</button>
+                  </form>
+            
+                  <div id="result"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- my cureency converter end -->
+            
+            
           </div>
           <div class="hero_shape_image">
            
@@ -213,34 +243,11 @@
           <div class="hero_hand_image wow fadeInRight" data-wow-delay=".2s">
             <!-- <img src="assets/images/hero/hero_hand_image.png" alt="Hand Image"> -->
           </div>
+
           <div class="ob_hero_img">
+            
             <div class="wow fadeInRight" data-wow-delay=".2s"> 
-               <!-- my cureency converter -->
-            <div class="currency-converter">
-              <h3>Currency Converter</h3>
-              <form id="converter-form">
-                  <label for="fromCurrency">From:</label>
-                  <div class="custom-dropdown">
-                      <button id="fromButton" class="dropdown-btn">Select Currency</button>
-                      <div id="fromDropdown" class="dropdown-content"></div>
-                  </div>
-          
-                  <label for="amount">Amount:</label>
-                  <input type="number" id="amount" placeholder="Enter amount" required>
-          
-                  <label for="toCurrency">To:</label>
-                  <div class="custom-dropdown">
-                      <button id="toButton" class="dropdown-btn">Select Currency</button>
-                      <div id="toDropdown" class="dropdown-content"></div>
-                  </div>
-          
-                  <button type="button" onclick="convertCurrency()">Convert</button>
-              </form>
-          
-              <div id="result"></div>
-          </div>
-          
-          <!-- my cureency converter end -->
+            
               <!-- <img src="assets/images/hero/card.png" alt=""> -->
             </div>
           </div>
@@ -345,7 +352,7 @@
 
         <!-- Feature Section - Start
         ================================================== -->
-        <section class="feature_section section_space">
+        <!-- <section class="feature_section section_space">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-7">
@@ -413,7 +420,7 @@
                     <img src="assets/images/ob-screen-2.jpg" alt="Feature Image">
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="imagebox_block pb-0 bg-light">
                   <div class="imagebox_content">
@@ -433,7 +440,7 @@
                   </div>
                 </div>
               </div> -->
-              <div class="col-lg-4 col-md-6 col-sm-6">
+              <!-- <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="imagebox_block pb-0 bg-info">
                   <div class="imagebox_content">
                     <div class="imagebox_icon">
@@ -453,13 +460,13 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- Feature Section - End
         ================================================== -->
 
         <!-- About Section - Start
         ================================================== -->
-        <section class="about_section section_space pb-0 bg-light">
+        <!-- <section class="about_section section_space pb-0 bg-light">
           <div class="container">
             <div class="row align-items-center justify-content-lg-between">
               <div class="col-lg-5">
@@ -540,7 +547,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- About Section - End
         ================================================== -->
 
@@ -591,20 +598,25 @@
             <div class="row section_decoration">
               <div class="col-lg-4">
                 <div class="funfact_block style_2" style="background-image: url('assets/images/shapes/funfact_bg_1.svg');">
-                  <div class="funfact_value">
-                    <span>Fast Transfers</span>
+                  <div class="imagebox_icon">
+                    <img src="assets/images/icons/icon_wallet.svg" alt="Icon Wallet">
                   </div>
+                  <h3 class="imagebox_title">
+                    Fast Transfers
+                  </h3>
                   <h4 class="funfact_title mb-0">
                     Send money in minutes, not days. Our lightning-fast system ensures quick delivery worldwide.
                   </h4>
                 </div>
                 <div class="funfact_block style_2" style="background-image: url('assets/images/shapes/funfact_bg_2.svg');">
-                  <div class="funfact_value">
-                    <span class="odometer" data-count="300">0</span>
-                    <span>K+</span>
+                  <div class="imagebox_icon">
+                    <img src="assets/images/icons/icon_chart_2.svg" alt="Icon Chart 2">
                   </div>
+                  <h3 class="imagebox_title">
+                    Competitive Exchange Rates
+                  </h3>
                   <h4 class="funfact_title mb-0">
-                    Gain access to a vast global network of over 300k+ partner ATMs located worldwide.
+                    Save more with the best exchange rates and transparent fees—no hidden costs.
                   </h4>
                 </div>
               </div>
@@ -620,21 +632,27 @@
               </div>
               <div class="col-lg-4">
                 <div class="funfact_block style_2" style="background-image: url('assets/images/shapes/funfact_bg_3.svg');">
-                  <div class="funfact_value">
-                    <span class="odometer" data-count="990">0</span>
-                    <span>K+</span>
+                  <div class="imagebox_icon">
+                    <img src="assets/images/icons/icon_global_search.svg" alt="Icon Global Search">
                   </div>
+                  <h3 class="imagebox_title">
+                    Global Reach
+                  </h3>
+    
                   <h4 class="funfact_title mb-0">
-                    Wings quickly gained popularity among youth, attracting over 990k+ customers in first year.
+                    Transfer money to over 100 countries with multiple payout options, including bank deposits, cash pickup, and mobile wallets.
                   </h4>
                 </div>
                 <div class="funfact_block style_2" style="background-image: url('assets/images/shapes/funfact_bg_4.svg');">
-                  <div class="funfact_value">
-                    <span class="odometer" data-count="60">0</span>
-                    <span>%</span>
+                  <div class="imagebox_icon">
+                    <img src="assets/images/icons/icon_bitcoin.svg" alt="Icon Bitcoin">
                   </div>
+                  <h3 class="imagebox_title">
+                    Secure & Reliable
+                  </h3>
+                
                   <h4 class="funfact_title mb-0">
-                    Users enjoy 60% faster transaction processing times compared to traditional banks, providing them.
+                    We use top-tier encryption and compliance standards to keep your transactions safe.
                   </h4>
                 </div>
               </div>
@@ -678,10 +696,10 @@
                   <img src="assets/images/icons/icon_web_design.svg" alt="Icon Web Design">
                 </div>
                 <h3 class="title">
-                  Effortlessly Manage Your Virtual Cards
+                  Complete Your Profile & Verification
                 </h3>
                 <p class="mb-0">
-                  Easily manage your virtual cards with our platform. Customize, track, and stay secure.
+                  Provide necessary identification details for security and compliance (e.g., government-issued ID, address).
                 </p>
               </li>
               <li>
@@ -690,19 +708,20 @@
                   <img src="assets/images/icons/icon_pen.svg" alt="Icon Pen">
                 </div>
                 <h3 class="title">
-                  ATM Withdrawals and Online Banking
+                  Manage Your Account & Transactions
                 </h3>
                 <p class="mb-0">
-                  Easily withdraw cash from ATMs and conveniently manage your banking needs online.
+                  View transaction history and receipts. Set up recurring transfers for regular payments. 
+                  Contact customer support for assistance, if needed.
                 </p>
               </li>
               <li class="bg-primary">
                 <div class="content_wrap">
                   <h3 class="title text-dark">
-                    The Start of Today Begins Now
+                    Start Today And Enjoy Hassle-Free Money Transfers
                   </h3>
                   <p class="text-dark">
-                    Today marks the inception of a new journey, starting at this very moment.
+                    With your account set up, you can send and receive money anytime, anywhere—with full confidence in speed, security, and efficiency.
                   </p>
                 </div>
                 <a class="btn bg-dark" href="contact.html">
@@ -814,7 +833,7 @@
                             </div>
                           </div>
                           <p class="review_comment mb-0">
-                            "Switching to Synox online banking has been amazing. The seamless interface makes managing finances effortless. Whether tracking, paying bills, or transferring funds, Finto exceeds expectations. Highly recommended for anyone seeking a reliable banking solution."
+                            "Switching to PerryLeo online banking has been amazing. The seamless interface makes managing finances effortless. Whether tracking, paying bills, or transferring funds, Finto exceeds expectations. Highly recommended for anyone seeking a reliable banking solution."
                           </p>
                         </div>
                       </div>
@@ -842,7 +861,7 @@
                             </div>
                           </div>
                           <p class="review_comment mb-0">
-                            "Switching to Synox online banking has been amazing. The seamless interface makes managing finances effortless. Whether tracking, paying bills, or transferring funds, Finto exceeds expectations. Highly recommended for anyone seeking a reliable banking solution."
+                            "Switching to PerryLeo's online banking has been amazing. The seamless interface makes managing finances effortless. Whether tracking, paying bills, or transferring funds, Finto exceeds expectations. Highly recommended for anyone seeking a reliable banking solution."
                           </p>
                         </div>
                       </div>
@@ -870,7 +889,7 @@
                             </div>
                           </div>
                           <p class="review_comment mb-0">
-                            "Switching to Synox online banking has been amazing. The seamless interface makes managing finances effortless. Whether tracking, paying bills, or transferring funds, Finto exceeds expectations. Highly recommended for anyone seeking a reliable banking solution."
+                            "Switching to PerryLeo's online banking has been amazing. The seamless interface makes managing finances effortless. Whether tracking, paying bills, or transferring funds, Finto exceeds expectations. Highly recommended for anyone seeking a reliable banking solution."
                           </p>
                         </div>
                       </div>
@@ -1082,7 +1101,7 @@
                 <div class="footer_widget pe-md-3">
                   <h2 class="footer_info_title">Newsletter</h2>
                   <p class="pe-lg-5">
-                    Sign up to Synox weekly newsletter to get the latest updates.
+                    Sign up to PerryLeo's weekly newsletter to get the latest updates.
                   </p>
                   <form class="footer_newslatter_2" action="#">
                     <label for="footer_mail_input">
@@ -1176,7 +1195,7 @@
               <div class="row">
                 <div class="col-lg-6">
                   <p class="copyright_text mb-0">
-                    Copyright © 2024 Synox, All rights reserved.
+                    Copyright © 2024 PerryLeo, All rights reserved.
                   </p>
                 </div>
                 <div class="col-lg-6">

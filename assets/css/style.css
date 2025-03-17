@@ -212,7 +212,8 @@ mark {
 
 .container {
   padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px; 
+}
 
 .container-fluid {
   padding-left: 30px;
@@ -275,7 +276,7 @@ mark {
   color: currentColor;
   font-family: 'Font Awesome 6 Pro'; }
 
-  /* currency-converter styles */
+  
   .currency-converter {
     max-width: 400px;
     margin: 20px auto;
@@ -421,6 +422,7 @@ mark {
 
 
 @media screen and (min-width: 992px) {
+
   .dropdown-menu {
     left: 0;
     opacity: 0;
@@ -1435,12 +1437,14 @@ input[type=search]::-webkit-search-results-decoration {
   --bs-warning-rgb: 255, 233, 212;
   --bs-light-rgb: 239, 246, 255;
   --bs-info-rgb: 221, 253, 237;
+  
   padding: 50px 46px;
   background-color: var(--bs-light);
   border-radius: var(--bs-border-radius-lg); }
-  .online_banking_features .imagebox_block .imagebox_icon {
+  .imagebox_icon {
     width: 70px;
     height: 70px;
+    margin: 0 0 30px 0;
     border-radius: 100%;
     align-items: center;
     display: inline-flex;
@@ -1851,7 +1855,10 @@ input[type=search]::-webkit-search-results-decoration {
     padding: 70px 30px; }
 
   .offcanvas_wrapper.active {
-    right: 0; } }
+    right: 0; } 
+  
+
+}
 /* Offcanvas - End
 ================================================== */
 /* 3.01 - Site Header - Start
@@ -1864,7 +1871,7 @@ input[type=search]::-webkit-search-results-decoration {
   position: absolute;
   transition: transform .5s; }
   .site_header .site_logo .site_link {
-    max-width: 122px; }
+    max-width: 60px; }
   .site_header .btns_group {
     gap: 10px; }
     .site_header .btns_group > li:first-child {
@@ -1981,9 +1988,12 @@ input[type=search]::-webkit-search-results-decoration {
   --bs-dark-rgb: 6, 2, 16; }
 
 @media screen and (max-width: 991px) {
+    
   .header_layout_1 .xb-header:not(.stricked-menu) .main_menu_list > li > a,
   .header_layout_1 .xb-header:not(.stricked-menu) .main_menu_list > li > a::after {
-    color: #012A2B; } }
+    color: #012A2B; } 
+  
+  }
 .ob-header-btn .btn .btn_icon {
   color: #D9FF43;
   transition: .3s; }
@@ -2702,8 +2712,9 @@ input[type=search]::-webkit-search-results-decoration {
     position: absolute; }
   .hero_online_banking .ob_hero_img {
     position: absolute;
-    right: 339px;
-    bottom: 34%; }
+    right: 119px;
+    bottom: 27%; 
+  }
     .hero_online_banking .ob_hero_img img {
       animation: updown 2s infinite linear;
       -webkit-animation: updown 2s infinite linear; }
@@ -3008,7 +3019,7 @@ input[type=search]::-webkit-search-results-decoration {
 ================================================== */
 .funfact_block .funfact_value {
   line-height: 1;
-  font-size: 50px;
+  font-size: 25px;
   font-weight: 600;
   margin-bottom: 6px;
   align-items: center;
@@ -5345,9 +5356,9 @@ Responsive For Mobile & Tablet Devices
     max-width: 550px; }
 
   .hero_online_banking .ob_hero_img {
-    right: 223px;
-    bottom: 40%;
-    max-width: 400px; }
+    right: 119px;
+    bottom: 27%;
+    max-width: 100%; }
 
   .online_banking_process .title {
     font-size: 24px;
@@ -5810,8 +5821,8 @@ Responsive For Mobile & Tablet Devices
     right: -60px; }
 
   .hero_online_banking .ob_hero_img {
-    right: 106px;
-    bottom: 33%;
+    right: 39px;
+    bottom: 27%;
     max-width: 380px; }
 
   .hero_section h1 {
@@ -6011,7 +6022,7 @@ Responsive For Mobile & Tablet Devices
 
   .hero_online_banking .hero_hand_image,
   .hero_online_banking .ob_hero_img {
-    display: none; }
+    display: block; }
 
   .hero_online_banking {
     text-align: center; }
@@ -6277,6 +6288,7 @@ Responsive For Mobile & Tablet Devices
 /* Media Screen 767px - Start
 ================================================== */
 @media screen and (max-width: 767px) {
+
   .header_layout_1 {
     padding: 20px 0; }
 
