@@ -3233,7 +3233,7 @@ input[type=search]::-webkit-search-results-decoration {
       background-color: var(--bs-dark);
       border: 1px solid var(--bs-primary); }
     .integrated_wrapper .site_logo img {
-      max-width: 132px; }
+      max-width: 20%px; }
 
 .appstore_section {
   padding: 70px 0 0;
