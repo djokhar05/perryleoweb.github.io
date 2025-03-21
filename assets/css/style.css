@@ -276,7 +276,9 @@ mark {
   color: currentColor;
   font-family: 'Font Awesome 6 Pro'; }
 
-  
+  .currency-converter-container{
+    width: 40% !important;
+  }
   .currency-converter {
     max-width: 400px;
     margin: 20px auto;
@@ -523,9 +525,13 @@ mark {
 
 /* 1.2 - Template Reset - End
 ================================================== */
+.appp_btn{
+  margin-top: 30px;
+  display: flex;
+}
 .appp_btn .btn {
-  padding: 18px 30px;
-  font-size: 14px; }
+  padding: 15px 20px;
+  font-size: 11px; }
 
 /* 2.01 - Template CSS Animations - Start
 ================================================== */
@@ -5965,7 +5971,14 @@ Responsive For Mobile & Tablet Devices
     height: 780px; }
 
   .hero_car_insurance .hero_car {
-    right: 36.7%; } }
+    right: 36.7%; } 
+  
+
+    .currency-converter-container{
+      width: 100% !important;
+    }
+  
+  }
 /* Media Screen 1024px - End
 ================================================== */
 /* Media Screen 991px - Start
