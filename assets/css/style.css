@@ -214,6 +214,9 @@ mark {
   padding-left: 15px;
   padding-right: 15px; 
 }
+.about_container .page_title{
+  text-align: center;
+}
 
 .container-fluid {
   padding-left: 30px;
@@ -2703,7 +2706,8 @@ input[type=search]::-webkit-search-results-decoration {
     background-repeat: no-repeat;
     background-position: center center; }
   .hero_online_banking .hero_title {
-    margin: 24px 0 22px; }
+    margin: 24px 0 22px;
+   }
   .hero_online_banking p {
     font-size: 20px;
     font-weight: 500;
