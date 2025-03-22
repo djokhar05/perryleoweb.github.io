@@ -223,6 +223,7 @@ mark {
   margin: -15px; }
 
 [class*="col-"] {
+  z-index: 9;
   padding: 15px; }
 
 .dropdown-menu {
@@ -1586,6 +1587,9 @@ input[type=search]::-webkit-search-results-decoration {
     font-size: 22px;
     line-height: 28px;
     margin-bottom: 18px; }
+    .iconbox_content iconbox_title {
+      color: white !important;
+    }
 
 .car_process_section .shape_nate_1 {
   left: 0;
@@ -2241,7 +2245,7 @@ input[type=search]::-webkit-search-results-decoration {
     .footer_layout_2 .iconbox_block .iconbox_icon {
       background-color: rgba(255, 255, 255, 0.1); }
     .footer_layout_2 .iconbox_block .iconbox_title {
-      color: #CFCFCF;
+      color: white;
       font-size: 14px;
       margin-bottom: 8px;
       font-family: 'SuisseIntl Medium'; }
@@ -3271,6 +3275,21 @@ input[type=search]::-webkit-search-results-decoration {
   background-position: center center; }
   .contact_process_content .process_line {
     margin: -30px 0 -105px; }
+    .contact_process_content .process_line_2 {
+      position: absolute;
+      z-index: 2;
+      top: 730px; 
+      
+    }
+    .contact_process_content .process_line_2 {
+      position: absolute;
+      z-index: 2;
+      top: 730px;
+      right: 250px; 
+    }
+    .contact_process_content .process_line_2 img{
+      width: 65vw;
+    } 
   .contact_process_content .site_logo {
     z-index: 1;
     position: relative; }
@@ -3291,7 +3310,9 @@ input[type=search]::-webkit-search-results-decoration {
   font-size: 22px;
   font-weight: 500;
   line-height: 32px;
-  font-family: 'SuisseIntl Medium'; }
+  font-family: 'SuisseIntl Medium'; 
+  color: white !important;
+}
 .contact_process_step .block_number {
   line-height: 1;
   font-size: 60px;
@@ -3572,7 +3593,7 @@ input[type=search]::-webkit-search-results-decoration {
   flex-wrap: wrap;
   align-items: flex-start; }
   .process_steps_block > li {
-    max-width: 262px; }
+    max-width: 462px; }
   .process_steps_block .step_block_icon {
     width: 60px;
     height: 60px;
@@ -3607,7 +3628,11 @@ input[type=search]::-webkit-search-results-decoration {
       background-color: var(--bs-border-color); }
 
 .ps_policy_section {
-  padding: 0 30px; }
+  padding: 0;
+  margin-top: 60px;
+  
+}
+
   .ps_policy_section .content_wrapper {
     padding: 130px 15px;
     border-radius: 30px; }
@@ -3633,6 +3658,15 @@ input[type=search]::-webkit-search-results-decoration {
   .ps_policy_items.process_steps_block .step_block_icon img {
     max-height: 76px; }
 
+  .ps_policy_items{
+    width: 100%;
+    
+  } 
+  
+  .ps_policy_items li{
+    width: 50%;
+    
+  }
 /* 4.09 - Service - End
 ================================================== */
 /* 4.02 - Call To Action - Start
@@ -6784,7 +6818,10 @@ Responsive For Mobile & Tablet Devices
 
   .contact_process_content .process_line {
     margin: -20px 0 -60px; }
+    .contact_process_content .process_line_2 {
+      margin: 20px 0 -60px; }
 
+ 
   .contact_process_step .iconbox_block {
     padding: 30px; }
 
