@@ -417,11 +417,11 @@ mark {
 
 /* Conversion Result */
 #result {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
 }
 
 /* currency converter ends */
