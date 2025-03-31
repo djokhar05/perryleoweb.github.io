@@ -2222,7 +2222,9 @@ input[type=search]::-webkit-search-results-decoration {
 .footer_layout_2 {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  overflow: hidden;
+}
   .footer_layout_2 .overlay {
     opacity: 0.02;
     background-size: cover;
@@ -4078,7 +4080,7 @@ input[type=search]::-webkit-search-results-decoration {
     line-height: 1;
     font-size: 16px;
     margin-bottom: 30px;
-    color: var(--bs-body-font-color);
+    color: var(--bs-primary);
     font-family: 'SuisseIntl Medium'; }
   .pricing_block .pricing_features .iconlist_block {
     gap: 6px; }
@@ -4088,6 +4090,29 @@ input[type=search]::-webkit-search-results-decoration {
         opacity: 0.3; }
       .pricing_block .pricing_features .iconlist_block > li .iconlist_icon {
         color: var(--bs-primary); }
+
+    .fees_card{
+      background-color: var(--bs-secondary);
+      border-radius: 20px;
+      padding: 35px;
+      color: var(--bs-light);
+     
+    }
+    .fees_card div{
+      line-height: 2;
+    }
+    .fees_card .fees_percent{
+      color: var(--bs-primary);
+      font-size: 50px;
+      font-weight: 700;
+    }
+    .fees_card .fees_image img{
+      max-height: 30px;
+    }
+    .fees_card .fees_iconlist_text{
+      font-size: 13px;
+      line-height: 1.3;
+    }
   .pricing_block .btn {
     margin-top: 75px; }
   .pricing_block .pricing_amount {
@@ -4120,8 +4145,8 @@ input[type=search]::-webkit-search-results-decoration {
 
 .pricing_block.style_2 {
   padding: 50px 180px 50px 0; }
-  .pricing_block.style_2 > * {
-    max-width: 370px; }
+  /* .pricing_block.style_2 > * {
+    max-width: 370px; } */
 
 .pricing_block .btn svg path {
   transition: .3s; }
@@ -4382,6 +4407,12 @@ input[type=search]::-webkit-search-results-decoration {
   margin: -30px -15px; }
   .row:has([class*="col-"] > .blog_post_block) [class*="col-"] {
     padding: 30px 15px; }
+    .leading-2{
+      line-height: 1.5 !important;
+    }
+    /* .color-yellow{
+      color: var(--bs-primary) !important;
+    } */
 
 .blog_section .shape_nate_1 {
   top: 270px;
