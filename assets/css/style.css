@@ -644,7 +644,9 @@ mark {
 .section_space {
   padding-top: 140px;
   padding-bottom: 140px; }
-
+  .section_space_2 {
+    margin-top: 100px;
+    margin-bottom: 0px; }
 /* 2.03 - Template Gapping or Spacing - End
 ================================================== */
 /* 2.04 - Order & Unorder List - Start
