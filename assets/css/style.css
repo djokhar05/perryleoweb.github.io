@@ -424,6 +424,61 @@ mark {
   color: black;
 }
 
+.conversion-loader {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error {
+  color: #dc3545;
+  background: #ffe6e6;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.conversion-success {
+  background: #e8f5e9;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.fee-note {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+
+.currency-code {
+    min-width: 50px;
+    display: inline-block;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+    border: 1px solid #ddd;
+}
+
+.currency-name {
+    margin-left: 8px;
+    color: #666;
+}
+
+
 /* currency converter ends */
 .heading_block_margin{
   margin-top: 140px;
