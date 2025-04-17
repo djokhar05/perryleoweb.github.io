@@ -311,19 +311,43 @@ async function convertCurrency() {
         }
         console.log(data, "data.data")
 
-        // Handle successful response
-        if (data.status = "success") {
-            // console.log("API Response:", data, "status=" , data.status);
-            resultDiv.innerHTML = `
-                <div class="conversion-result">
-                    <p>${amount} ${fromCurrency} =</p>
-                    <h3>${data.data.source.modifiedSourceAmount} ${toCurrency}</h3>
+        if (data.status === "success") { // Fixed assignment operator (= to ===)
+            // Create number formatters
+            const amountFormatter = new Intl.NumberFormat('en-US', {
+                maximumFractionDigits: 2,
+                minimumFractionDigits: 2
+            });
 
-                    ${data.data.perryTransferFee ? `<p class="fee transferFee">Transfer Fee: ${data.data.perryTransferFee}</p>` : ''}
-                    ${data.data.perryExchangeRate ? `<p class="fee exchangeRate">Exchange Rate: ${data.data.perryExchangeRate}</p>` : ''}
-                    
-                </div>
-            `;
+            const convertedFormatter = new Intl.NumberFormat('en-US', {
+                minimumFractionDigits: 3,
+                maximumFractionDigits: 3
+            });
+
+            const feeFormatter = new Intl.NumberFormat('en-US', {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            });
+
+            const rateFormatter = new Intl.NumberFormat('en-US', {
+                minimumFractionDigits: 4,
+                maximumFractionDigits: 5
+            });
+
+            // Format values
+            const formattedAmount = amountFormatter.format(amount);
+            const formattedConverted = convertedFormatter.format(data.data.source.modifiedSourceAmount);
+            const formattedFee = data.data.perryTransferFee ?
+            (parseFloat(data.data.perryTransferFee.replace('%', '')) / amount) * 100 : null;
+            const formattedRate = data.data.perryExchangeRate ?
+                rateFormatter.format(data.data.perryExchangeRate) : null;
+
+            resultDiv.innerHTML = `
+                    <div class="conversion-result">
+                        <p>${fromCurrency} ${formattedAmount}  =</p>
+                        <h3>${toCurrency} ${formattedConverted}</h3>
+                        ${formattedFee ? `<p class="fee transferFee">Transfer Fee Added: ${fromCurrency} ${formattedFee}</p>` : ''}
+                    </div>
+                `;
         } else {
             throw new Error("Invalid response format from server");
         }
