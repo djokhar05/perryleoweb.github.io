@@ -337,7 +337,7 @@ async function convertCurrency() {
             const formattedAmount = amountFormatter.format(amount);
             const formattedConverted = convertedFormatter.format(data.data.source.modifiedSourceAmount);
             const formattedFee = data.data.perryTransferFee ?
-            (parseFloat(data.data.perryTransferFee.replace('%', '')) / amount) * 100 : null;
+            (parseFloat(data.data.perryTransferFee.replace('%', '')) / 100) * amount : null;
             const formattedRate = data.data.perryExchangeRate ?
                 rateFormatter.format(data.data.perryExchangeRate) : null;
 
