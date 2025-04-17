@@ -97,98 +97,6 @@ function closeDropdowns() {
     document.getElementById("toDropdown").classList.remove("show");
 }
 
-// async function convertCurrency() {
-//     const fromCurrency = document.getElementById("fromButton").dataset.value;
-//     const toCurrency = document.getElementById("toButton").dataset.value;
-//     const amount = document.getElementById("amount").value;
-//     const resultDiv = document.getElementById("result");
-//     const include_perry_fee = true;
-//     if (!amount || amount <= 0) {
-//         resultDiv.innerHTML = "<p style='color: red; font-weight: bold;'>Please enter a valid amount.</p>";
-//         return;
-//     }
-
-//     try {
-//         const response = await fetch(`https://perryleo-server-dest.vercel.app/api/pbc/getTransferRates/?amount=${amount}&source_currency=${fromCurrency}&destination_currency=${toCurrency}&include_perry_fee=${include_perry_fee}`);
-//         if (!response.ok) throw new Error("API request failed");
-
-//         const data = await response.json();
-//         if (data.result !== "success") throw new Error("Invalid response from API");
-
-//         const rate = data.conversion_rates[toCurrency];
-
-//         if (rate) {
-//             const convertedAmount = (amount * rate).toFixed(2);
-//             resultDiv.innerHTML = `<p>${amount} ${fromCurrency} = <strong>${convertedAmount} ${toCurrency}</strong></p>`;
-//         } else {
-//             resultDiv.innerHTML = "<p style='color: red; font-weight: bold;'>Conversion rate not available.</p>";
-//         }
-//     } catch (error) {
-//         resultDiv.innerHTML = `<p style='color: red; font-weight: bold;'>Error: ${error.message}. Try again later.</p>`;
-//     }
-// }
-
-
-// async function convertCurrency() {
-//     const convertBtn = document.querySelector("#converter-form button");
-//     const resultDiv = document.getElementById("result");
-
-//     // Show loading state
-//     convertBtn.disabled = true;
-//     resultDiv.innerHTML = '<div class="loading">Converting...</div>';
-
-//     // Get input values
-//     const fromCurrency = document.getElementById("fromButton").dataset.value;
-//     const toCurrency = document.getElementById("toButton").dataset.value;
-//     const amount = document.getElementById("amount").value;
-
-//     try {
-//         // Validate inputs
-//         if (!amount || amount <= 0) {
-//             throw new Error("Please enter a valid amount greater than 0");
-//         }
-//         if (!fromCurrency || !toCurrency) {
-//             throw new Error("Please select both currencies");
-//         }
-
-//         // Build API URL
-//         const apiUrl = new URL("https://perryleo-server-dest.vercel.app/api/pbc/getTransferRates");
-//         const params = {
-//             amount: amount,
-//             source_currency: fromCurrency,
-//             destination_currency: toCurrency,
-//             include_perry_fee: true
-//         };
-
-//         Object.keys(params).forEach(key => 
-//             apiUrl.searchParams.append(key, params[key])
-//         );
-
-//         // Make API call
-//         const response = await fetch(apiUrl);
-//         const data = await response.json();
-
-//         if (!response.ok) {
-//             throw new Error(data.message || "Conversion failed");
-//         }
-
-//         // Display result
-//         resultDiv.innerHTML = `
-//             <div class="result">
-//                 <div class="conversion-rate">
-//                     ${amount} ${fromCurrency} = 
-//                     <strong>${data.convertedAmount} ${toCurrency}</strong>
-//                 </div>
-//                 ${data.fee ? `<div class="fee">Fee: ${data.fee} ${fromCurrency}</div>` : ''}
-//             </div>
-//         `;
-
-//     } catch (error) {
-//         resultDiv.innerHTML = `<div class="error">${error.message}</div>`;
-//     } finally {
-//         convertBtn.disabled = false;
-//     }
-// }
 
 
 async function convertCurrency() {
@@ -197,9 +105,15 @@ async function convertCurrency() {
     const amount = document.getElementById("amount").value;
     const resultDiv = document.getElementById("result");
     const include_perry_fee = true;
+    
 
+    const convertBtn = document.getElementById("convertBtn");
+    const spinner = convertBtn.querySelector(".spinner");
+    const btnText = convertBtn.querySelector(".btn-text");
     // Clear previous results
     resultDiv.innerHTML = '';
+
+    convertBtn.classList.add("converting");
 
     try {
         // console.log("Starting conversion with:", { fromCurrency, toCurrency, amount });
@@ -263,6 +177,9 @@ async function convertCurrency() {
                 <p>${error.message}</p>
             </div>
         `;
+    } finally {
+        // Hide spinner
+        convertBtn.classList.remove("converting");
     }
 }
 
@@ -286,17 +203,4 @@ function setupFormHandling() {
         }
     });
 }
-
-// const data =
-// {
-//     "status": "success",
-//     "message": "Transfer amount fetched",
-//     "data":
-//         {
-//             "rate": 1548.1648,
-//             "source": { "currency": "NGN", "amount": 4644494.4, "modifiedSourceAmount": 5019305.09808 },
-//             "destination": { "currency": "USD", "amount": 3000, "modifiedDestinationAmount": 3030 },
-//             "modifiedRate": 1656.5363360000001, "perryExchangeRate": "7%", "perryTransferFee": "1%",
-//         }
-// }
 
