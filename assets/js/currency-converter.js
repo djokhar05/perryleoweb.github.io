@@ -298,6 +298,7 @@ async function convertCurrency() {
         Object.keys(params).forEach(key =>
             apiUrl.searchParams.append(key, params[key])
         );
+        
 
         // console.log("API Request URL:", apiUrl.href);
 
@@ -311,6 +312,34 @@ async function convertCurrency() {
         }
         console.log(data, "data.data")
 
+        // Parse and calculate fee in SOURCE currency
+        const feePercentage = parseFloat(data.data.perryTransferFee.replace('%', ''));
+        const feeInSourceCurrency = (amount * feePercentage) / 100;
+
+        // Convert fee to DESTINATION currency
+        let feeInDestinationCurrency = null;
+        if (data.data.perryTransferFee) {
+            const feeApiUrl = new URL("https://perryleo-server-dest.vercel.app/api/pbc/getTransferRates");
+            const feeParams = {
+                amount: feeInSourceCurrency,
+                source_currency: fromCurrency,
+                destination_currency: toCurrency,
+                include_perry_fee: false // Exclude fees for fee conversion
+            };
+
+            Object.keys(feeParams).forEach(key => 
+                feeApiUrl.searchParams.append(key, feeParams[key])
+            );
+
+            const feeResponse = await fetch(feeApiUrl);
+            const feeData = await feeResponse.json();
+
+            if (feeData.status === "success") {
+                feeInDestinationCurrency = feeData.data.source.amount;
+                console.log(feeData,feeInDestinationCurrency, "feeData")
+            }
+        }
+
         if (data.status === "success") { // Fixed assignment operator (= to ===)
             // Create number formatters
             const amountFormatter = new Intl.NumberFormat('en-US', {
@@ -319,33 +348,32 @@ async function convertCurrency() {
             });
 
             const convertedFormatter = new Intl.NumberFormat('en-US', {
-                minimumFractionDigits: 3,
-                maximumFractionDigits: 3
-            });
-
-            const feeFormatter = new Intl.NumberFormat('en-US', {
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 2
             });
 
-            const rateFormatter = new Intl.NumberFormat('en-US', {
-                minimumFractionDigits: 4,
-                maximumFractionDigits: 5
-            });
+            // const feeFormatter = new Intl.NumberFormat('en-US', {
+            //     minimumFractionDigits: 2,
+            //     maximumFractionDigits: 2
+            // });
+
+            // const rateFormatter = new Intl.NumberFormat('en-US', {
+            //     minimumFractionDigits: 4,
+            //     maximumFractionDigits: 5
+            // });
 
             // Format values
             const formattedAmount = amountFormatter.format(amount);
             const formattedConverted = convertedFormatter.format(data.data.source.modifiedSourceAmount);
-            const formattedFee = data.data.perryTransferFee ?
-            (parseFloat(data.data.perryTransferFee.replace('%', '')) / 100) * amount : null;
-            const formattedRate = data.data.perryExchangeRate ?
-                rateFormatter.format(data.data.perryExchangeRate) : null;
+            const formattedSourceFee = amountFormatter.format(feeInSourceCurrency);
+            const formattedDestFee = feeInDestinationCurrency ? 
+                convertedFormatter.format(feeInDestinationCurrency) : null;
 
             resultDiv.innerHTML = `
                     <div class="conversion-result">
-                        <p>${fromCurrency} ${formattedAmount}  =</p>
-                        <h3>${toCurrency} ${formattedConverted}</h3>
-                        ${formattedFee ? `<p class="fee transferFee">Transfer Fee Added: ${fromCurrency} ${formattedFee}</p>` : ''}
+                        <p>${toCurrency} ${formattedAmount}  =</p>
+                        <h3>${fromCurrency} ${formattedConverted}</h3>
+                        ${feeInSourceCurrency && feeInDestinationCurrency ? `<p class="fee transferFee">Transfer Fee Added: ${toCurrency} ${formattedSourceFee} <br> (equiv. ${fromCurrency} ${formattedDestFee})</p>` : ''}
                     </div>
                 `;
         } else {

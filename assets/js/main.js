@@ -1,9 +1,9 @@
 // ==================================================
-// * Project Name   :  Synox – Finance & Consulting Site Template.
+// * Project Name   :  PerryLeo – Breaking borders, one payment at a time
 // * File           :  JS Base
 // * Version        :  1.0.0
-// * Author         :  XpressBuddy (https://themeforest.net/user/xpressbuddy/portfolio)
-// * Developer      :  webrok (https://www.fiverr.com/webrok?up_rollout=true)
+// * Author         :  Djeffsource
+// * Developer      :  Djeffsource
 // ==================================================
 
 (function($) {
