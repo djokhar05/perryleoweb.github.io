@@ -303,38 +303,43 @@
                       Give us chance to serve and bring magic to your Finance.
                     </p>
                   </div>
-                  <form action="#">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="input_title" for="input_name">Name<sup>*</sup></label>
-                          <input id="input_name" class="form-control" type="text" name="name" placeholder="Carlo Castillo" required>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="input_title" for="input_email">Email<sup>*</sup></label>
-                          <input id="input_email" class="form-control" type="email" name="email" placeholder="alma.lawson@example.com" required>
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="form-group">
-                          <label class="input_title" for="input_phone">Phone<sup>*</sup></label>
-                          <input id="input_phone" class="form-control" type="tel" name="phone" placeholder="+88 (0) 101 0000 000" required>
-                        </div>
-                        <div class="form-group">
-                          <label class="input_title" for="input_message">Cover Letter<sup>*</sup></label>
-                          <textarea id="input_message" class="form-control" name="message" placeholder="Write about your self..." required></textarea>
-                        </div>
-                        <button class="btn text-dark" type="submit">
-                          <span class="btn_label">Send Message</span>
-                          <span class="btn_icon ml-10"><svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 9H19V7H0V9Z" fill="#012A2B" />
-                          </svg></span>
-                        </button>
-                      </div>
-                    </div>
-                  </form>
+                  <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="4e64f052-d356-4330-8e08-643525b12fa2">
+  <input type="hidden" name="subject" value="New Contact from PerryLeo Website">
+  <input type="hidden" name="redirect" value="thank-you.html">
+  
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label class="input_title" for="input_name">Name<sup>*</sup></label>
+        <input id="input_name" class="form-control" type="text" name="name" placeholder="John Doe" required>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label class="input_title" for="input_email">Email<sup>*</sup></label>
+        <input id="input_email" class="form-control" type="email" name="email" placeholder="johndoe@example.com" required>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-group">
+        <label class="input_title" for="input_phone">Phone<sup>*</sup></label>
+        <input id="input_phone" class="form-control" type="tel" name="phone" placeholder="080 1234 9133" required>
+      </div>
+      <div class="form-group">
+        <label class="input_title" for="input_message">Cover Letter<sup>*</sup></label>
+        <textarea id="input_message" class="form-control" name="message" placeholder="Let us know how we can help ..." required></textarea>
+      </div>
+      <button class="btn text-dark" type="submit">
+        <span class="btn_label">Send Message</span>
+        <span class="btn_icon ml-10"><svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 9H19V7H0V9Z" fill="#012A2B" />
+        </svg></span>
+      </button>
+    </div>
+  </div>
+</form>
+
                 </div>
               </div>
               <div class="col-lg-4">
