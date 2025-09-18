@@ -420,6 +420,12 @@
   </head>
 
   <body>
+    <script>
+    if (!document.referrer || !document.referrer.includes('web3forms.com')) {
+        window.location.href = 'contact.html';
+    }
+    </script>
+
 
     <!-- Body Wrap - Start -->
     <div class="page_wrapper">
@@ -502,11 +508,11 @@
           <div class="overlay" style="background-image: url('assets/images/hero/hero_pattern.svg');"></div>
           <div class="about_container container">
             <h1 class="page_title text-white">Thank You!</h1>
-            <ul class="breadcrumb_nav unordered_list justify-content-center">
+            <!-- <ul class="breadcrumb_nav unordered_list justify-content-center">
               <li><a href="index.html">Home</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li class="active"><a href="#!">Thank You</a></li>
-            </ul>
+            </ul> -->
           </div>
           
           <div class="decoration_item icon_star_1">
